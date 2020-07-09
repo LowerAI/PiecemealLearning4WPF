@@ -4,7 +4,7 @@
 + [原文链接](https://www.bilibili.com/video/BV1XJ41127Dp)
 
 ## WpfClient WPF客户端
-+ 本项目是为了配学习旭老师的<Identity Server 4 原理和实战（完结）>()中的P5所写
++ 本项目是为了配学习旭老师的[Identity Server 4 原理和实战（完结）](https://www.bilibili.com/video/BV16b411k7yM)中的P5所写
 
 ## BV11J411S7Zf 【WPF】自己做一个弹窗控件
 + [原文链接](https://www.bilibili.com/video/BV11J411S7Zf)
@@ -15,8 +15,8 @@
 
 ## BV1wb411Y7Xa 【WPF】动画的两种基本的写法
 + [原文链接](https://www.bilibili.com/video/BV1wb411Y7Xa)
-+ RenderTransformOrigin表示旋转的起始坐标，默认值是元素的左上角，终点是元素的右下角
-+ EasingFunction表示缓动函数，效果就是旋转开始时的加速和结束时的减速
++ `RenderTransformOrigin`表示旋转的起始坐标，默认值是元素的左上角，终点是元素的右下角
++ `EasingFunction`表示缓动函数，效果就是旋转开始时的加速和结束时的减速
 
 ## BV1aE411i7YQ WPF界面设计教程(Metaril Design)
 + [原文链接](https://www.bilibili.com/video/BV1aE411i7YQ)
@@ -25,7 +25,7 @@
 ## BV1Cb411y7A3【WPF】仿制一个安卓切换按钮
 + [原文链接](https://www.bilibili.com/video/BV1Cb411y7A3)
 + 矩形的高度只有ToggleButton容器的一半，因此需要转换器MyConverter
-+ 绑定容器或者元素自身的属性需要·RelativeSource={RelativeSource Self}·
++ 绑定容器或者元素自身的属性需要`RelativeSource={RelativeSource Self}`
 
 ## BV1HJ411w7eN 【WPF入门视频】Microsoft ToDo 项目实战(合集)
 + [原文链接](https://www.bilibili.com/video/BV1HJ411w7eN)
