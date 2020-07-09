@@ -1,0 +1,51 @@
+{
+  "id": "1927108",
+  "name": "示例图",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "用于WPF界面设计教程(Metaril Design) https://www.bilibili.com/video/BV1aE411i7YQ",
+  "glyphs": [
+    {
+      "icon_id": "702680",
+      "name": "hololens",
+      "font_class": "hololens",
+      "unicode": "e8ce",
+      "unicode_decimal": 59598
+    },
+    {
+      "icon_id": "1160984",
+      "name": "xbox",
+      "font_class": "xbox",
+      "unicode": "e8e8",
+      "unicode_decimal": 59624
+    },
+    {
+      "icon_id": "1444034",
+      "name": "bing",
+      "font_class": "bing",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "3846904",
+      "name": "Windows",
+      "font_class": "Windows",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "5725892",
+      "name": "laptop",
+      "font_class": "laptop",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "13302923",
+      "name": "azure",
+      "font_class": "azure",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+﻿<Window x:Class="BV1mJ411F7zG.P2_布局"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1mJ411F7zG"
+        mc:Ignorable="d"
+        Title="P2_布局" Height="250" Width="250">
+    <Grid>
+        <!--<Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="hello" />-->
+        <!--<Button Content="hello" Margin="15" />-->
+        <!--<Button Content="hello" Margin="15 10 5 0" />-->
+
+        <!--<StackPanel Orientation="Horizontal">-->
+        <!--<StackPanel Orientation="Vertical">
+            <Button Width="40" Height="40" Background="Red" />
+            <Button Width="40" Height="40" Background="Beige" />
+            <Button Width="40" Height="40" Background="DarkBlue" />
+            <Button Width="40" Height="40" Background="Pink" />
+            <Button Width="40" Height="40" Background="DarkGray" />
+            <Button Width="60" Height="60" Background="Green" />
+            <Button Width="60" Height="60" Background="Yellow" />
+        </StackPanel>-->
+
+        <!--<WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Button Width="60" Height="60" Background="Red" />
+            <Button Width="60" Height="60" Background="Beige" />
+            <Button Width="60" Height="60" Background="DarkBlue" />
+            <Button Width="60" Height="60" Background="Pink" />
+            <Button Width="60" Height="60" Background="DarkGray" />
+            <Button Width="60" Height="60" Background="Green" />
+            <Button Width="60" Height="60" Background="Yellow" />
+        </WrapPanel>-->
+
+        <!--<DockPanel LastChildFill="False">
+            <Button DockPanel.Dock="Top" Width="40" Height="40" Background="Red" />
+            <Button DockPanel.Dock="Left" Width="40" Height="40" Background="Beige" />
+            <Button DockPanel.Dock="Right" Width="40" Height="40" Background="DarkBlue" />
+            <Button DockPanel.Dock="Bottom" Width="40" Height="40" Background="Pink" />
+            <Button Width="40" Height="40" Background="DarkGray" />
+        </DockPanel>-->
+
+        <UniformGrid Rows="2" Columns="2">
+            <Button Width="60" Height="60" Background="Red" />
+            <Button Width="60" Height="60" Background="Beige" />
+            <Button Width="60" Height="60" Background="DarkBlue" />
+            <Button Width="60" Height="60" Background="Pink" />
+            <Button Width="60" Height="60" Background="DarkGray" />
+            <Button Width="60" Height="60" Background="Green" />
+            <Button Width="60" Height="60" Background="Yellow" />
+        </UniformGrid>
+    </Grid>
+</Window>

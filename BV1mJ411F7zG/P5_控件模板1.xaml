@@ -1,0 +1,22 @@
+﻿<Window x:Class="BV1mJ411F7zG.P5_控件模板1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1mJ411F7zG"
+        mc:Ignorable="d"
+        Title="P5_控件模板1" Height="450" Width="500">
+    <Window.Resources>
+        <ControlTemplate x:Key="defaultButtonTemplate" TargetType="Button">
+            <Border Background="Red" CornerRadius="5">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="{TemplateBinding HorizontalAlignment}">
+                    <TextBlock Text="🤍" VerticalAlignment="Center" />
+                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalAlignment}" VerticalAlignment="{TemplateBinding VerticalAlignment}" />
+                </StackPanel>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid>
+        <Button Content="Hello" Width="100" Height="40" Template="{StaticResource defaultButtonTemplate}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+    </Grid>
+</Window>

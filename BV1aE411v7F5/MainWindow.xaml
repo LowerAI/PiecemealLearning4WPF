@@ -1,0 +1,170 @@
+﻿<Window x:Class="BV1aE411v7F5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1aE411v7F5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="770" Width="1175" WindowStyle="None" AllowsTransparency="True">
+    <Border BorderThickness="1" BorderBrush="#E5E5E5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition />
+                <RowDefinition Height="60" />
+            </Grid.RowDefinitions>
+
+            <!--顶部-标题栏-开始-->
+            <Grid Background="#BC2F2E" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+                <TextBlock Text="网易云音乐" Margin="10 0 0 0" Foreground="White" VerticalAlignment="Center" />
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="&#xe6b6;" Foreground="White" FontSize="20" FontFamily="./#Iconfont" />
+                    <TextBlock Text="&#xe6b4;" Foreground="White" FontSize="20" FontFamily="./#Iconfont" Margin="5 0 5 0" />
+                    <TextBlock Text="&#xe60b;" Foreground="White" FontSize="20" FontFamily="./#Iconfont" Margin="0 0 5 0" />
+                </StackPanel>
+            </Grid>
+            <!--顶部-标题栏-结束-->
+
+            <!--中部-内容区-开始-->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Border BorderThickness="0 0 1 0" BorderBrush="#E5E5E5">
+                    <!--中部左侧-菜单面板-开始-->
+                    <Grid Background="#F3F3F5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="40" />
+                        </Grid.RowDefinitions>
+
+                        <!--中部左侧上面-菜单列表-开始-->
+                        <Grid Margin="15 10 0 0">
+                            <StackPanel>
+                                <TextBlock Text="&#xe602;" FontFamily="./#Iconfont" FontSize="20" />
+
+                                <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 20 0 0">
+                                    <TextBlock Text="&#xe650;" FontFamily="./#Iconfont" FontSize="16" Foreground="#666666" />
+                                    <TextBlock Text="搜索" Margin="10 0 0 0" Foreground="#666666" />
+                                </StackPanel>
+
+                                <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 20 0 0">
+                                    <TextBlock Text="&#xe613;" FontFamily="./#Iconfont" FontSize="16" Foreground="#666666" />
+                                    <TextBlock Text="发现音乐" Margin="10 0 0 0" Foreground="#666666" />
+                                </StackPanel>
+
+                                <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 20 0 0">
+                                    <TextBlock Text="&#xe62c;" FontFamily="./#Iconfont" FontSize="16" Foreground="#666666" />
+                                    <TextBlock Text="MV" Margin="10 0 0 0" Foreground="#666666" />
+                                </StackPanel>
+
+                                <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 20 0 0">
+                                    <TextBlock Text="&#xe603;" FontFamily="./#Iconfont" FontSize="16" Foreground="#666666" />
+                                    <TextBlock Text="朋友" Margin="10 0 0 0" Foreground="#666666" />
+                                </StackPanel>
+
+                                <StackPanel Margin="0 40 0 0">
+                                    <TextBlock Text="我的音乐" Foreground="#666666" />
+
+                                    <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 20 0 0">
+                                        <TextBlock Text="&#xe600;" FontFamily="./#Iconfont" FontSize="16" Foreground="#666666" />
+                                        <TextBlock Text="本地音乐" Margin="10 0 0 0" Foreground="#666666" />
+                                    </StackPanel>
+
+                                    <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 20 0 0">
+                                        <TextBlock Text="&#xe60a;" FontFamily="./#Iconfont" FontSize="16" Foreground="#666666" />
+                                        <TextBlock Text="下载管理" Margin="10 0 0 0" Foreground="#666666" />
+                                    </StackPanel>
+
+                                    <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 20 0 0">
+                                        <TextBlock Text="&#xe68e;" FontFamily="./#Iconfont" FontSize="16" Foreground="#666666" />
+                                        <TextBlock Text="最近播放" Margin="10 0 0 0" Foreground="#666666" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <StackPanel Margin="0 40 0 0">
+                                    <UniformGrid Columns="2">
+                                        <TextBlock Text="创建的播单" Foreground="#666666" />
+                                        <TextBlock Text="㊉" HorizontalAlignment="Right" Margin="0 0 15 0" Foreground="#666666" />
+                                    </UniformGrid>
+
+                                    <StackPanel Height="20" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 20 0 0">
+                                        <TextBlock Text="&#xe60d;" FontFamily="./#Iconfont" FontSize="13" Foreground="#666666" />
+                                        <TextBlock Text="我喜欢的音乐" Margin="10 0 0 0" Foreground="#666666" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <!--中部左侧上面-菜单列表-结束-->
+
+                        <Border BorderThickness="0 0 0 1" BorderBrush="#E5E5E5" />
+
+                        <!--中部左侧上面-用户信息-开始-->
+                        <Grid Grid.Row="1">
+                            <UniformGrid Columns="2" VerticalAlignment="Center">
+                                <TextBlock Text="未登录" Margin="15 0 0 0" Foreground="#666666" />
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <TextBlock Text="&#xe626;" FontFamily="./#Iconfont" FontSize="14" Foreground="#666666" />
+                                    <TextBlock Text="&#xe601;" FontFamily="./#Iconfont" FontSize="14" Foreground="#666666" Margin="10 0 10 0" />
+                                </StackPanel>
+                            </UniformGrid>
+                        </Grid>
+                        <!--中部左侧上面-用户信息-结束-->
+                    </Grid>
+                    <!--中部左侧-菜单面板-结束-->
+                </Border>
+
+                <Grid Grid.Column="1">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="contentpage.png" />
+                    </Grid.Background>
+                </Grid>
+            </Grid>
+            <!--中部-内容区-结束-->
+
+            <!--底部-状态栏-开始-->
+            <Grid Grid.Row="2" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="180" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="240" />
+                </Grid.ColumnDefinitions>
+
+                <Border CornerRadius="30" Background="Red" Margin="5" />
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Border CornerRadius="30" Background="#DF3B3B" Width="22" Height="24">
+                        <TextBlock Text="&#xe631;" FontFamily="./#Iconfont" FontSize="22" Foreground="White" />
+                    </Border>
+
+                    <Border CornerRadius="30" Background="#DF3B3B" Margin="15 0 15 0">
+                        <TextBlock Text="&#xe740;" FontFamily="./#Iconfont" FontSize="26" Foreground="White" />
+                    </Border>
+
+                    <Border CornerRadius="30" Background="#DF3B3B" Width="22" Height="24">
+                        <TextBlock Text="&#xe651;" FontFamily="./#Iconfont" FontSize="22" Foreground="White" />
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                    <TextBlock Text="00:00 / 00:00" HorizontalAlignment="Right" Foreground="#666666" />
+
+                    <Border BorderThickness="1" BorderBrush="#E5E5E5" Margin="0 10 0 0" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="&#xe60d;" Width="50" FontFamily="./#Iconfont" FontSize="13" Foreground="#666666" />
+                    <TextBlock Text="&#xe755;" Width="50" FontFamily="./#Iconfont" FontSize="14" Foreground="#666666" />
+                    <TextBlock Text="&#xe677;" Width="50" FontFamily="./#Iconfont" FontSize="14" Foreground="#666666" />
+                    <TextBlock Text="&#xe60c;" Width="50" FontFamily="./#Iconfont" FontSize="14" Foreground="#666666" />
+                </StackPanel>
+            </Grid>
+            <!--底部-状态栏-结束-->
+        </Grid>
+    </Border>
+</Window>

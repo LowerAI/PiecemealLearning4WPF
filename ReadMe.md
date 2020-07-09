@@ -1,0 +1,70 @@
+# Piecemeal Learning 分散式学习
+
+## BV1XJ41127Dp WPF动画基础(模拟心跳)
++ <原文链接>(https://www.bilibili.com/video/BV1XJ41127Dp)
+
+## WpfClient WPF客户端
++ 本项目是为了配学习旭老师的<Identity Server 4 原理和实战（完结）>()中的P5所写
+
+## BV11J411S7Zf 【WPF】自己做一个弹窗控件
++ <原文链接>(https://www.bilibili.com/video/BV11J411S7Zf)
++ 再次使用缓动函数实现动画的加减速
+
+## BV1aE411v7F5 WPF界面设计教程之【网易云音乐】
++ <原文链接>(https://www.bilibili.com/video/BV1aE411v7F5)
+
+## BV1wb411Y7Xa 【WPF】动画的两种基本的写法
++ <原文链接>(https://www.bilibili.com/video/BV1wb411Y7Xa)
++ RenderTransformOrigin表示旋转的起始坐标，默认值是元素的左上角，终点是元素的右下角
++ EasingFunction表示缓动函数，效果就是旋转开始时的加速和结束时的减速
+
+## BV1aE411i7YQ WPF界面设计教程(Metaril Design)
++ <原文链接>(https://www.bilibili.com/video/BV1aE411i7YQ)
++ 要实现元素超出容器之外只需设置边距Margin的值为复数即可
+
+## BV1Cb411y7A3【WPF】仿制一个安卓切换按钮
++ <原文链接>(https://www.bilibili.com/video/BV1Cb411y7A3)
++ 矩形的高度只有ToggleButton容器的一半，因此需要转换器MyConverter
++ 绑定容器或者元素自身的属性需要·RelativeSource={RelativeSource Self}·
+
+## BV1HJ411w7eN 【WPF入门视频】Microsoft ToDo 项目实战(合集)
++ <原文链接>(https://www.bilibili.com/video/BV1HJ411w7eN)
+
+## BV1ME411i7gC 【WPF】做一个带提示文本的控件
++ <原文链接>(https://www.bilibili.com/video/BV1ME411i7gC)
++ 扩展TextBox
++ 通过添加依赖属性TipText来实现文本框水印效果
+
+
+## BV1mJ411F7zG WPF入门基础教程(合集)
++ <原文链接>(https://www.bilibili.com/video/BV1mJ411F7zG)抄写而来
+
+### P2-布局
+#### 1.布局的基本原则
++ 一个窗口中只能包含一个元素
++ 不应使用坐标设置元素的位置
++ 大多数情况不应显式定义元素尺寸
++ 支持多元素时，可使用嵌套容器
+
+#### 总结
++ 掌握最为常用的最外层布局容器Grid，StackPanel则为有限的空间内垂直或水平分布元素。
++ WrapPanel相对于StackPanel其自适应空间，可进行自动(换行/换列)处理，适用于自适应布局及元素的个数不固定的情况
++ DockPanel具备4个方向的锚定功能，可适应灵活的非固定的页面布局。
+
+#### P3-样式
++ WPF中的各类控件元素，都可以自由的设置其样式。
++ 诸如：
++ 字体(FontFamily)
++ 字体大小(FontSize)
++ 背景颜色(Background)
++ 字体颜色(Foreground)、边距(Margin)、
++ 水平位置(HorizontalAlignment)、垂直位置(VerticalAlignment)等等
++ 而样式则是组织和重用以上的重要工具。不是使用重复的标记填充XAML，通过Style创建一系列封装所有这些细节的样式。然后通过Style属性应用封装好的样式。这点类似于CSS样式。然而WPF样式的功能更加强大，如控件的模板、触发器等等。
+
+#### P4-触发器
++ Trigger---普通触发器
++ MultiTrigger---多条件触发器
++ EventTrigger---事件触发器
+
+#### P5-控件模板
++ 

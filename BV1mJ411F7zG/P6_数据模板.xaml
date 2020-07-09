@@ -1,0 +1,28 @@
+﻿<Window x:Class="BV1mJ411F7zG.P6_数据模板"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1mJ411F7zG"
+        mc:Ignorable="d"
+        Title="P6_数据模板" Height="450" Width="500">
+    <Grid>
+        <DataGrid x:Name="gd" AutoGenerateColumns="False" CanUserSortColumns="True" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding UserName}" Width="80" Header="学生姓名" />
+                <DataGridTextColumn Binding="{Binding ClassName}" Width="100" Header="班级名称" />
+                <DataGridTextColumn Binding="{Binding Address}" Width="200" Header="地址" />
+                <DataGridTemplateColumn Header="操作" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Button Content="编辑" />
+                                <Button Margin="8 0 0 0" Content="删除" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

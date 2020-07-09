@@ -1,0 +1,13 @@
+﻿<Window x:Class="BV1ME411i7gC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1ME411i7gC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="450" Background="#FF007ACC">
+    <StackPanel VerticalAlignment="Center">
+        <local:TipTextBox Width="140" Height="40" TipText="姓名" VerticalContentAlignment="Center" />
+        <local:TipTextBox Width="140" Height="40" TipText="密码" VerticalContentAlignment="Center" Margin="0 10" />
+    </StackPanel>
+</Window>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="BV1wb411Y7Xa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1wb411Y7Xa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Width="70" Height="30" Content="Move" RenderTransformOrigin="0.5, 0.5">
+            <Button.RenderTransform>
+                <RotateTransform x:Name="ButtonRoate" Angle="0" />
+            </Button.RenderTransform>
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation From="0" To="720" Duration="0:0:2" Storyboard.TargetName="ButtonRoate" Storyboard.TargetProperty="Angle">
+                                <DoubleAnimation.EasingFunction>
+                                    <CubicEase EasingMode="EaseInOut" />
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+
+        <Button Name="MyButton" Click="MyButton_Click" Width="70" Height="30" Content="Move" RenderTransformOrigin="0.5, 0.5" Margin="0 70 0 0" Background="Green">
+            <Button.RenderTransform>
+                <RotateTransform Angle="0" x:Name="MyButtonRolate" />
+            </Button.RenderTransform>
+        </Button>
+    </Grid>
+</Window>
