@@ -6,8 +6,128 @@
         xmlns:hc="https://handyorg.github.io/handycontrol"
         xmlns:local="clr-namespace:M3U8_Downloader"
         mc:Ignorable="d"
-        Title="MainWindow" Height="511" Width="1290" WindowStartupLocation="CenterScreen">
-    <Grid>
+        Title="MainWindow" Height="490" Width="1236" WindowStartupLocation="CenterScreen" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="25" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
+        <!--顶部-标题&菜单栏-开始-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="240" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="M3U8 Downloader - 1.0  by：nilaoda" Margin="22 0 0 0" FontSize="12" FontWeight="Bold" Foreground="#347DDB" />
+                <TextBlock Text="已完成：" Margin="15 0 0 0" FontSize="12" FontWeight="Bold" Foreground="#347DDB" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <TextBlock Name="Label_Monitor" Margin="5 0" Text="嗅探工具" FontSize="9" Foreground="#347DDB" />
+                <TextBlock Name="label_OpenTool" Margin="5 0" Text="合并或批量" FontSize="9" Foreground="#347DDB" />
+                <TextBlock Name="Label_WriteLog" Margin="5 0" Text="生成日志" FontSize="9" Foreground="#347DDB" />
+                <TextBlock Name="label14" Margin="5 0" Text="FFmpeg" FontSize="9" Foreground="#347DDB" />
+                <TextBlock Name="label_Update" Margin="5 0" Text="更新" FontSize="9" Foreground="#347DDB" />
+                <TextBlock Name="label_About" Margin="5 0" Text="关于" FontSize="9" Foreground="#347DDB" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Name="button_Min" Margin="5 0" Content="MIN" FontSize="10" Background="#347DDB" Width="111" Height="31" VerticalContentAlignment="Center" />
+                <Button Name="EXIT" Margin="5 0" Content="EXIT" FontSize="10" Background="#E74C3C" Width="111" Height="31" VerticalContentAlignment="Center" />
+            </StackPanel>
+        </Grid>
+        <!--顶部-标题&菜单栏-结束-->
+
+        <!--中部-信息提示-开始-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="1" Name="textBox_forRegex" Visibility="Hidden" Width="527" Height="23" />
+        </Grid>
+        <!--中部-信息提示-结束-->
+
+        <!--底部-内容区-开始-->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="360" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="112" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <StackPanel Margin="22 0 0 0">
+                    <TextBlock Text="拖拽或键入地址" FontSize="9pt" Foreground="White" Margin="10 0 10 0" />
+                    <TextBox Name="textBox_Adress" Margin="0 5 0 0" Width="327" Height="90" Background="Black"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="22 5 0 0">
+                    <TextBlock Text="文件名及格式" FontSize="9pt" Foreground="White" Margin="10 0 10 0" />
+                    <RadioButton Content="FLV" Foreground="White" Margin="6 0" />
+                    <RadioButton Content="MP4" Foreground="White" Margin="6 0" />
+                    <RadioButton Content="MKV" Foreground="White" Margin="6 0" />
+                    <RadioButton Content="TS"  Foreground="White" Margin="6 0" IsChecked="True" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Margin="22 0 0 0">
+                    <TextBox Name="textBox_Name" Margin="0 5 0 0" Width="327" Height="24" Background="Black"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Margin="22 5 0 0">
+                    <TextBlock Text="当前下载路径" FontSize="9pt" Foreground="White" Margin="10 0 10 0" />
+                    <TextBox Name="textBox_DownloadPath" Margin="0 5 0 0" Width="327" Height="65" Background="Black"/>
+                </StackPanel>
+
+                <Grid Grid.Row="4" Margin="22 5 0 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Name="button_ChangePath" Margin="6 10 0 0" Content="更改下载路径" FontSize="10" Foreground="White" Background="Black" Width="143" Height="30" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <Button Grid.Row="0" Grid.Column="1" Name="button_OpenPath" Margin="0 10 6 0" Content="打开下载路径" FontSize="10" Foreground="White" Background="Black" Width="143" Height="30" HorizontalAlignment="Right"  VerticalContentAlignment="Center" />
+
+                    <Button Grid.Row="1" Grid.Column="0" Name="button_Download" Margin="6 10 0 0" Content="下载" FontSize="10" Foreground="White" Background="Black" Width="143" Height="67" HorizontalAlignment="Left"  VerticalContentAlignment="Center" />
+                    <Button Grid.Row="1" Grid.Column="1" Name="button_Quit" Margin="0 10 6 0" Content="退出" FontSize="10" Foreground="White" Background="Black" Width="143" Height="67" HorizontalAlignment="Right" VerticalContentAlignment="Center" />
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal" Margin="12 5 0 0">
+                    <TextBlock Text="信息显示：" FontSize="9pt" Foreground="White" Margin="10 0 10 0" />
+                    <TextBlock Text="点此终止" Foreground="White" Margin="6 0" />
+                    <TextBlock Text="[视频信息，]" Foreground="White" Margin="6 0" />
+                    <TextBlock Text="[总时长：]" Foreground="White" Margin="6 0" />
+                    <TextBlock Text="[已下载：，]"  Foreground="White" Margin="6 0" />
+                </StackPanel>
+
+                <TextBox Grid.Row="1" Name="textBox_Info" Text="请在左侧进行操作..." Margin="0 5 0 0" Width="327" Height="90" Background="Black" />
+            </Grid>
+        </Grid>
+        <!--底部-内容区-结束-->
     </Grid>
 </Window>

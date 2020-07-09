@@ -33,5 +33,13 @@ namespace M3U8_Downloader
             MessageBox.Show("CurrentDomain_UnhandledException 异常已处理！");
             //e.Handled = true; //此异常已处理
         }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
     }
 }
