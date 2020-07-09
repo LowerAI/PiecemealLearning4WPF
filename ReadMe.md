@@ -1,43 +1,43 @@
 # Piecemeal Learning 分散式学习
 
 ## BV1XJ41127Dp WPF动画基础(模拟心跳)
-+ <原文链接>(https://www.bilibili.com/video/BV1XJ41127Dp)
++ [原文链接](https://www.bilibili.com/video/BV1XJ41127Dp)
 
 ## WpfClient WPF客户端
 + 本项目是为了配学习旭老师的<Identity Server 4 原理和实战（完结）>()中的P5所写
 
 ## BV11J411S7Zf 【WPF】自己做一个弹窗控件
-+ <原文链接>(https://www.bilibili.com/video/BV11J411S7Zf)
++ [原文链接](https://www.bilibili.com/video/BV11J411S7Zf)
 + 再次使用缓动函数实现动画的加减速
 
 ## BV1aE411v7F5 WPF界面设计教程之【网易云音乐】
-+ <原文链接>(https://www.bilibili.com/video/BV1aE411v7F5)
++ [原文链接](https://www.bilibili.com/video/BV1aE411v7F5)
 
 ## BV1wb411Y7Xa 【WPF】动画的两种基本的写法
-+ <原文链接>(https://www.bilibili.com/video/BV1wb411Y7Xa)
++ [原文链接](https://www.bilibili.com/video/BV1wb411Y7Xa)
 + RenderTransformOrigin表示旋转的起始坐标，默认值是元素的左上角，终点是元素的右下角
 + EasingFunction表示缓动函数，效果就是旋转开始时的加速和结束时的减速
 
 ## BV1aE411i7YQ WPF界面设计教程(Metaril Design)
-+ <原文链接>(https://www.bilibili.com/video/BV1aE411i7YQ)
++ [原文链接](https://www.bilibili.com/video/BV1aE411i7YQ)
 + 要实现元素超出容器之外只需设置边距Margin的值为复数即可
 
 ## BV1Cb411y7A3【WPF】仿制一个安卓切换按钮
-+ <原文链接>(https://www.bilibili.com/video/BV1Cb411y7A3)
++ [原文链接](https://www.bilibili.com/video/BV1Cb411y7A3)
 + 矩形的高度只有ToggleButton容器的一半，因此需要转换器MyConverter
 + 绑定容器或者元素自身的属性需要·RelativeSource={RelativeSource Self}·
 
 ## BV1HJ411w7eN 【WPF入门视频】Microsoft ToDo 项目实战(合集)
-+ <原文链接>(https://www.bilibili.com/video/BV1HJ411w7eN)
++ [原文链接](https://www.bilibili.com/video/BV1HJ411w7eN)
 
 ## BV1ME411i7gC 【WPF】做一个带提示文本的控件
-+ <原文链接>(https://www.bilibili.com/video/BV1ME411i7gC)
++ [原文链接](https://www.bilibili.com/video/BV1ME411i7gC)
 + 扩展TextBox
 + 通过添加依赖属性TipText来实现文本框水印效果
 
 
 ## BV1mJ411F7zG WPF入门基础教程(合集)
-+ <原文链接>(https://www.bilibili.com/video/BV1mJ411F7zG)抄写而来
++ [原文链接](https://www.bilibili.com/video/BV1mJ411F7zG)抄写而来
 
 ### P2-布局
 #### 1.布局的基本原则
