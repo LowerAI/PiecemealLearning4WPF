@@ -1,7 +1,6 @@
-﻿using BV1XJ411Q7B2.ViewModel;
-using System.Windows;
+﻿using System.Windows;
 
-namespace BV1XJ411Q7B2
+namespace BV1UJ411d7zk
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -11,8 +10,6 @@ namespace BV1XJ411Q7B2
         public MainWindow()
         {
             InitializeComponent();
-
-            this.DataContext = new MainViewModel();
         }
     }
 }

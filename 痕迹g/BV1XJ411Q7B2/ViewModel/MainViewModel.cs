@@ -4,7 +4,6 @@ using MaterialDesignThemes.Wpf.Transitions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
@@ -24,7 +23,8 @@ namespace BV1XJ411Q7B2.ViewModel
             kinds.Add(TransitionEffectKind.SlideInFromRight);
             kinds.Add(TransitionEffectKind.SlideInFromBottom);
 
-            #region    颜色初始化Start            
+            #region 颜色初始化Start
+
             colors = new List<string>();
             colors.Add("#0355D2");
             colors.Add("#B6B106");
@@ -76,7 +76,8 @@ namespace BV1XJ411Q7B2.ViewModel
             colors.Add("#832C70");
             colors.Add("#3B9B3E");
             colors.Add("#67A168");
-            #endregion 颜色初始化End
+
+            #endregion 颜色初始化Start
 
             RefCommand = new RelayCommand(async () =>
             {
@@ -114,6 +115,5 @@ namespace BV1XJ411Q7B2.ViewModel
             get { return metroInfos; }
             set { metroInfos = value; RaisePropertyChanged(); }
         }
-
     }
 }

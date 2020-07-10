@@ -1,5 +1,8 @@
 # Piecemeal Learning 分散式学习
 
+## BV1UJ411d7zk 【WPF】做一个好看的侧边栏控件
++ [原文链接](https://www.bilibili.com/video/BV1UJ411d7zk)
+
 ## BV1XJ411Q7B2 WPF创建Metro磁贴风格应用
 + [原文链接](https://www.bilibili.com/video/BV1XJ411Q7B2)
 + 引用了MaterialDesignTheme和MvvmLight组件
