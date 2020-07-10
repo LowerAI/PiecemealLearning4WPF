@@ -1,5 +1,11 @@
 # Piecemeal Learning 分散式学习
 
+## BV1bJ411D7U3 【WPF】鼠标后面跟个球，跟随运动的做法
++ [原文链接](https://www.bilibili.com/video/BV1bJ411D7U3)
+
+## M3U8 Downloader 模仿WinForm版的The-New-M3U8-Downloader项目制作WPF版的m3u8直播下载器
++ [原文链接](https://github.com/nilaoda/The-New-M3U8-Downloader)
+
 ## BV1XJ41127Dp WPF动画基础(模拟心跳)
 + [原文链接](https://www.bilibili.com/video/BV1XJ41127Dp)
 
@@ -34,7 +40,6 @@
 + [原文链接](https://www.bilibili.com/video/BV1ME411i7gC)
 + 扩展TextBox
 + 通过添加依赖属性TipText来实现文本框水印效果
-
 
 ## BV1mJ411F7zG WPF入门基础教程(合集)
 + [原文链接](https://www.bilibili.com/video/BV1mJ411F7zG)抄写而来
