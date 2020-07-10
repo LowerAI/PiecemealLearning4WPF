@@ -1,5 +1,9 @@
 # Piecemeal Learning 分散式学习
 
+## BV1XJ411Q7B2 WPF创建Metro磁贴风格应用
++ [原文链接](https://www.bilibili.com/video/BV1XJ411Q7B2)
++ 引用了MaterialDesignTheme和MvvmLight组件
+
 ## BV1bJ411D7U3 【WPF】鼠标后面跟个球，跟随运动的做法
 + [原文链接](https://www.bilibili.com/video/BV1bJ411D7U3)
 
