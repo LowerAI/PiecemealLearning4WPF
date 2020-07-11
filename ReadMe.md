@@ -1,5 +1,9 @@
 # Piecemeal Learning 分散式学习
 
+## BV1cJ411Y7wW WPF开源图表使用介绍(LiveChart)
++ [原文链接](https://www.bilibili.com/video/BV1cJ411Y7wW)
++ LiveChats图表组件需要同时引用LiveChats包和LiveChats.Wpf包
+
 ## BV1UJ411d7zk 【WPF】做一个好看的侧边栏控件
 + [原文链接](https://www.bilibili.com/video/BV1UJ411d7zk)
 
