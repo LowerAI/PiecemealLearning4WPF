@@ -1,5 +1,8 @@
 # Piecemeal Learning 分散式学习
 
+## BV1DJ411r7j2【WPF】仿win10做一个侧边弹出式的消息框
++ [原文链接](https://www.bilibili.com/video/BV1DJ411r7j2)
+
 ## BV1uJ411n7Zw WPF界面设计教程(Sample1)
 + [原文链接](https://www.bilibili.com/video/BV1uJ411n7Zw)
 
