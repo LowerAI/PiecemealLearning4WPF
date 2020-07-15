@@ -1,5 +1,13 @@
 # Piecemeal Learning 分散式学习
 
+## BV1HJ411k7jV【WPF】仿win10风格做一个Checkbox
++ [原文链接](https://www.bilibili.com/video/BV1HJ411k7jV)
++ 元素的特效也可以通过属性面板去设置，例如本例中将字符L变成对勾使用了属性页中的转换->水平转换+角度旋转
+
+## SignalRDesktop WPF聊天室应用(ASP.NET Core SignalR)
++ [原文链接](https://www.bilibili.com/video/BV1Q741187Si)
++ 对应的MVC服务端项目叫做SingnalRDemo
+
 ## BV1DJ411r7j2【WPF】仿win10做一个侧边弹出式的消息框
 + [原文链接](https://www.bilibili.com/video/BV1DJ411r7j2)
 
