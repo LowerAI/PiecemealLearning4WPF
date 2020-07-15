@@ -1,0 +1,22 @@
+﻿<Window x:Class="BV157411P7sz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV157411P7sz"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" MouseMove="StackPanel_MouseMove" MouseLeave="StackPanel_MouseLeave" Height="100" Width="600" Orientation="Horizontal">
+            <Border Name="lb" Width="0" Background="#00CD66">
+                <TextBlock Text="左方块" Foreground="White" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+
+            <Button Name="element" BorderThickness="0" Content="滑动方块" FontSize="22" Width="600" />
+
+            <Border Name="rb" Width="0" Background="#FF4500">
+                <TextBlock Text="右方块" Foreground="White" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

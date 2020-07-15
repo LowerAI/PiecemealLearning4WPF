@@ -1,5 +1,8 @@
 # Piecemeal Learning 分散式学习
 
+## BV157411P7sz WPF模仿Outlook滑动效果
++ [原文链接](https://www.bilibili.com/video/BV157411P7sz)
+
 ## BV1HJ411k7jV【WPF】仿win10风格做一个Checkbox
 + [原文链接](https://www.bilibili.com/video/BV1HJ411k7jV)
 + 元素的特效也可以通过属性面板去设置，例如本例中将字符L变成对勾使用了属性页中的转换->水平转换+角度旋转
