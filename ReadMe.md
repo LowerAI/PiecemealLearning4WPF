@@ -1,5 +1,9 @@
 # Piecemeal Learning 分散式学习
 
+## BV1sJ41157F7【WPF】怎么做快捷键
++ [原文链接](https://www.bilibili.com/video/BV1sJ41157F7)
++ 绑定原理：元素通过RouteCommand绑定到命令，命令绑定到后台执行函数，也可以在后台的InputBindings中添加KeyBinding来替换“命令绑定到后台执行函数”这一步
+
 ## BV157411P7sz WPF模仿Outlook滑动效果
 + [原文链接](https://www.bilibili.com/video/BV157411P7sz)
 
