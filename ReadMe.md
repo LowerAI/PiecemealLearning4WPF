@@ -1,5 +1,28 @@
 # Piecemeal Learning 分散式学习
 
+## BV1qE411M7NU WPF转换器(Converter)
++ [原文链接](https://www.bilibili.com/video/BV1qE411M7NU)
++ 转换器：用于某个元素的属性值依赖于其他元素的属性值的变化而变化
+
+## BV1H7411Z7dY【WPF】无边框窗体怎么避坑
++ [原文链接](https://www.bilibili.com/video/)
++ Thumb类，表示可由用户拖动的控件。其主要三个事件分别DragDelta,DragStarted,DragCompleted.
+  + DragDelta——当 Thumb 控件具有逻辑焦点和鼠标捕获时，随着鼠标位置更改发生一次或多次。
+  + DragStarted——在 Thumb 控件接收逻辑焦点和鼠标捕获时发生。
+  + DragCompleted——在 Thumb 控件失去鼠标捕获时发生。
+
+## BV1kE411H7L2 WPF行为(Behavior)
++ [原文链接](https://www.bilibili.com/video/BV1kE411H7L2)
++ .Net Core 3.1.4的WPF中无法集成Behavior类
+
+## BV18E411M7Hi【WPF】怎么做侧滑的弹窗
++ [原文链接](https://www.bilibili.com/video/BV18E411M7Hi)
++ 重点：Frame装载页面、DoubleAnimation动画做弹出/关闭效果、事件触发器绑定动画来触发
+
+## BV1X7411K7fE WPF依赖属性_哔哩哔哩
++ [原文链接](https://www.bilibili.com/video/BV1X7411K7fE)
++ 注意：通过代码实现两个元素的双向绑定时，绑定元素的值总是随被绑定元素的值同步变更，而绑定元素值主动变更时只有该元素失去焦点后被绑定元素的值才会同步变更
+
 ## BV1sJ41157F7【WPF】怎么做快捷键
 + [原文链接](https://www.bilibili.com/video/BV1sJ41157F7)
 + 绑定原理：元素通过RouteCommand绑定到命令，命令绑定到后台执行函数，也可以在后台的InputBindings中添加KeyBinding来替换“命令绑定到后台执行函数”这一步
