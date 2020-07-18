@@ -1,0 +1,15 @@
+﻿<Window x:Class="BV1D741127X2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1D741127X2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30">
+            <TextBox Width="100" BorderThickness="0 0 0 1" />
+            <Button x:Name="GetCodeBtn" Width="120" Content="获取验证码" Foreground="White" Background="#FF007ACC" Margin="10 0 0 0" Click="GetCodeBtn_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,5 +1,13 @@
 # Piecemeal Learning 分散式学习
 
+## BV1D741127X2【WPF】倒计时关键帧
++ [原文链接](https://www.bilibili.com/video/BV1D741127X2)
++ 通过字符串的关键帧动画实现倒计时获取验证码
+
+## BV1uE411N7Bf WPF页面导航(MVVM)
++ [原文链接](https://www.bilibili.com/video/BV1uE411N7Bf)
++ 元素集合中的某项的属性值需要绑定到其父容器的数据源的某个属性或函数(从下往上去绑定)，此时需要RelativeSource
+
 ## BV1qE411M7NU WPF转换器(Converter)
 + [原文链接](https://www.bilibili.com/video/BV1qE411M7NU)
 + 转换器：用于某个元素的属性值依赖于其他元素的属性值的变化而变化
