@@ -125,7 +125,7 @@
                     <TextBlock Text="[已下载：，]"  Foreground="White" Margin="6 0" />
                 </StackPanel>
 
-                <TextBox Grid.Row="1" Name="textBox_Info" Text="请在左侧进行操作..." Margin="0 5 0 0" Width="327" Height="90" Background="Black" />
+                <TextBox Grid.Row="1" Name="textBox_Info" Text="请在左侧进行操作..." Margin="5" Background="Transparent" TextWrapping="Wrap" />
             </Grid>
         </Grid>
         <!--底部-内容区-结束-->

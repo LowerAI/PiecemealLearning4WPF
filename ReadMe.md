@@ -1,4 +1,17 @@
 # Piecemeal Learning 分散式学习
++ 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来
+
+## BV1i7411y7VJ WPFCore开源库MqttNet通讯实践
++ [原文链接](https://www.bilibili.com/video/BV1i7411y7VJ)
++ 使用MQTTNet中间件做的聊天
+
+## BV12741117cE【WPF】数字滑动效果
++ [原文链接](https://www.bilibili.com/video/BV12741117cE)
++ 依然是DoubleAnimation和缓动函数的组合，可以用于设计抽奖的核心模块
+
+## BV1gE411c7Zq WPF装饰器(Adorner)
++ [原文链接](https://www.bilibili.com/video/BV1gE411c7Zq)
++ 装饰器效果类似设计UI时选中控件的效果
 
 ## BV1D741127X2【WPF】倒计时关键帧
 + [原文链接](https://www.bilibili.com/video/BV1D741127X2)
