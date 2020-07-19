@@ -1,5 +1,17 @@
 # Piecemeal Learning 分散式学习
-+ 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来
++ 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
+
+## BV1ik4y1d7yf WPF动画(Animation)
++ [原文链接](https://www.bilibili.com/video/BV1ik4y1d7yf)
++ 注意动画代码的两种执行编写方式：一是通过Storyboard的SetXXX绑定后用Begin启动，一种是通过动画绑定的元素的BeginAnimation方法启动
+
+## BV11V411r75f【WPF】做一个令人讨厌的Loading动画
++ [原文链接](https://www.bilibili.com/video/BV11V411r75f)
+
+## BV1Z7411D7HM【WPF】状态转场动画的做法
++ [原文链接](https://www.bilibili.com/video/BV1Z7411D7HM)
++ 用VisualStateManager管理状态和状态之间的动画
++ 注意`<DiscreteColorKeyFrame Value="Red" KeyTime="0:0:0.5" />`中的`KeyTime`表示从转场开始到切换颜色完成的耗时，`<VisualTransition From="Free" To="Busy" GeneratedDuration="0:0:5">`中的`GeneratedDuration`表示从切换颜色完成到还原为初始颜色的耗时；
 
 ## BV1i7411y7VJ WPFCore开源库MqttNet通讯实践
 + [原文链接](https://www.bilibili.com/video/BV1i7411y7VJ)
@@ -40,7 +52,7 @@
 + [原文链接](https://www.bilibili.com/video/BV18E411M7Hi)
 + 重点：Frame装载页面、DoubleAnimation动画做弹出/关闭效果、事件触发器绑定动画来触发
 
-## BV1X7411K7fE WPF依赖属性_哔哩哔哩
+## BV1X7411K7fE WPF依赖属性
 + [原文链接](https://www.bilibili.com/video/BV1X7411K7fE)
 + 注意：通过代码实现两个元素的双向绑定时，绑定元素的值总是随被绑定元素的值同步变更，而绑定元素值主动变更时只有该元素失去焦点后被绑定元素的值才会同步变更
 

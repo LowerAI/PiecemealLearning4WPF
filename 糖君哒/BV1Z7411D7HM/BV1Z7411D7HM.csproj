@@ -6,14 +6,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="logo.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="logo.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
 </Project>
