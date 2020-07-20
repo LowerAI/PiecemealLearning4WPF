@@ -1,6 +1,9 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+## BV13Z4y1p7hE【WPF】按钮波纹点击特效
++ [原文链接](https://www.bilibili.com/video/BV13Z4y1p7hE)
+
 ## BV1ik4y1d7yf WPF动画(Animation)
 + [原文链接](https://www.bilibili.com/video/BV1ik4y1d7yf)
 + 注意动画代码的两种执行编写方式：一是通过Storyboard的SetXXX绑定后用Begin启动，一种是通过动画绑定的元素的BeginAnimation方法启动
