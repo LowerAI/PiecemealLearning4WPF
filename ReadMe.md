@@ -1,6 +1,14 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+## BV1u5411Y74a【WPF】矩阵 向量 与 跟随旋转
++ [原文链接](https://www.bilibili.com/video/BV1u5411Y74a)
++ 通过反余弦法和旋转矩阵乘法来实现类似坦克锁定目标后炮管与目标始终随动的效果
+
+## BV1ft4y117Bo WPF图表LiveChart性能增强版对比
++ [原文链接](https://www.bilibili.com/video/BV1ft4y117Bo)
+
+
 ## BV13Z4y1p7hE【WPF】按钮波纹点击特效
 + [原文链接](https://www.bilibili.com/video/BV13Z4y1p7hE)
 
