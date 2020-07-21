@@ -1,6 +1,11 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+## BV1Hf4y117G5【WPF】怎样做一个类似win10的动态磁贴
++ [原文链接](https://www.bilibili.com/video/BV1Hf4y117G5)
++ 注意ClipToBounds=true表示超出画布的部分被隐藏
++ 注意动画的目标属性需要初始值
+
 ## BV1kT4y1u7gL WPF关键帧动画
 + [原文链接](https://www.bilibili.com/video/BV1kT4y1u7gL)
 + 类似于视频编辑软件中有关键帧和没关键帧的区别

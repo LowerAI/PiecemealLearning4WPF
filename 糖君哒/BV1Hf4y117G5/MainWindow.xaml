@@ -1,0 +1,31 @@
+﻿<Window x:Class="BV1Hf4y117G5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1Hf4y117G5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Name="myWindow">
+    <Grid>
+        <Grid.Triggers>
+            <EventTrigger RoutedEvent="MouseLeftButtonDown">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation By="-200" Duration="0:0:1" Storyboard.TargetName="ImageContainer" Storyboard.TargetProperty="(Canvas.Left)">
+                            <DoubleAnimation.EasingFunction>
+                                <PowerEase EasingMode="EaseInOut" />
+                            </DoubleAnimation.EasingFunction>
+                        </DoubleAnimation>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Grid.Triggers>
+        <Canvas ClipToBounds="True" Width="200" Height="200">
+            <StackPanel Name="ImageContainer" Orientation="Horizontal" Canvas.Left="0">
+                <Image Width="200" Height="200" Source="20200721232743.png" Stretch='UniformToFill' />
+                <Image Width="200" Height="200" Source="20200721232743.png" Stretch='UniformToFill' />
+                <Image Width="200" Height="200" Source="20200721232743.png" Stretch='UniformToFill' />
+            </StackPanel>
+        </Canvas>
+    </Grid>
+</Window>
