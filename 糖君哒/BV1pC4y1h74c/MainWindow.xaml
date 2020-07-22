@@ -1,0 +1,17 @@
+﻿<Window x:Class="BV1pC4y1h74c.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1pC4y1h74c"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Canvas Background="#FF151515">
+        <Rectangle Name="OldDriver" Width="30" Height="30" Fill="Yellow" Canvas.Left="0" Canvas.Top="0" />
+        <Image Name="OldTank" Source="tank.jpg" Width="30" Height="70" Canvas.Left="0" Canvas.Top="200" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <RotateTransform x:Name="TargetRotate" Angle="0" />
+            </Image.RenderTransform>
+        </Image>
+    </Canvas>
+</Window>
