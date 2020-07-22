@@ -1,6 +1,10 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+## BV115411W74L WPF模板选择器(项目应用实战)
++ [原文链接](https://www.bilibili.com/video/BV115411W74L)
++ 注意自定义的数据模板类与前端自定义数据模板之间的关联
+
 ## BV1hZ4y1u7Wt【WPF】怎么做一个环形进度条
 + [原文链接](https://www.bilibili.com/video/BV1hZ4y1u7Wt)
 + ed是用来画圆形的，注意`EndAngle="{TemplateBinding Value,Converter={StaticResource cvt}}"`这一句就是实现ed和进度条的值进行绑定和转换的
