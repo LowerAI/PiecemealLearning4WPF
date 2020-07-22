@@ -1,0 +1,27 @@
+﻿<Window x:Class="BV1hZ4y1u7Wt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ed="clr-namespace:Microsoft.Expression.Shapes;assembly=Microsoft.Expression.Drawing"
+        xmlns:local="clr-namespace:BV1hZ4y1u7Wt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF151515">
+        <ProgressBar FontSize="36" Background="#FF292929" Foreground="#FF02395F" Maximum="1" Minimum="0" SmallChange="0.01" Width="200" Height="200" Value="{Binding ElementName=controller,Path=Value}">
+            <ProgressBar.Template>
+                <ControlTemplate TargetType="ProgressBar">
+                    <ControlTemplate.Resources>
+                        <local:PercentConverter x:Key="cvt" />
+                    </ControlTemplate.Resources>
+                    <Grid>
+                        <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=Value,StringFormat=p0}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <ed:Arc StartAngle="0" EndAngle="360" ArcThickness="16" Stretch="None" Fill="{TemplateBinding Background}" />
+                        <ed:Arc StartAngle="0" EndAngle="{TemplateBinding Value,Converter={StaticResource cvt}}" ArcThickness="16" Stretch="None" ArcThicknessUnit="Pixel" Fill="{TemplateBinding Foreground}" />
+                    </Grid>
+                </ControlTemplate>
+            </ProgressBar.Template>
+        </ProgressBar>
+        <Slider Name="controller" Minimum="0" Maximum="1" SmallChange="0.01" />
+    </Grid>
+</Window>
