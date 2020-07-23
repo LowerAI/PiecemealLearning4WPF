@@ -1,8 +1,14 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+## BV1fV411B7Fs【WPF】Matrix矩阵变换怎么运用
++ [原文链接](https://www.bilibili.com/video/BV1fV411B7Fs)
++ 一共6个值(M11,M12,M21,M22,OffsetX,OffsetY)，M11表示X轴坐标，M12表示原点不动时宿主偏离x轴的距离(会导致宿主拉伸变形并与X轴形成夹角)，M21表示原点不动时宿主偏离y轴的距离(会导致宿主拉伸变形并与y轴形成夹角)，M22表示Y轴坐标，OffsetX表示宿主的原点偏移x轴的距离，OffsetY表示宿主的原点偏移y轴的距离
+
 ## BV1pC4y1h74c【WPF 键盘操控移动】老司机应该怎么开车
 + [原文链接](https://www.bilibili.com/video/BV1pC4y1h74c)
++ 通过旋转变换来控制画布中的小车和坦克进行上下左右的移动
++ 我通过拆分到不同控制键来实现WASD控制小车用上下左右键控制坦克，但必须同时按双方的至少一个键才能保证坦克的移动，如何实现各自独立控制？？
 
 ## BV115411W74L WPF模板选择器(项目应用实战)
 + [原文链接](https://www.bilibili.com/video/BV115411W74L)

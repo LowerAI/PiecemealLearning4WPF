@@ -1,0 +1,17 @@
+﻿<Window x:Class="BV1fV411B7Fs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1fV411B7Fs"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="#FF1E1D1B" Height="450" Width="800" Loaded="Window_Loaded">
+    <Canvas Background="#FF383838" Margin="60">
+        <Image Source="timg.jpg" Width="200">
+            <Image.RenderTransform>
+                <MatrixTransform x:Name="CurrentTransform" Matrix="1,0.3 0.8,1 0,0" />
+            </Image.RenderTransform>
+        </Image>
+        <Rectangle Width="200" Height="200" Stroke="Blue" StrokeThickness="2" />
+    </Canvas>
+</Window>
