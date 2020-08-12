@@ -1,6 +1,10 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+## BV15V411U73V【WPF】教你做一个歌词提词器？
++ [原文链接](https://www.bilibili.com/video/BV15V411U73V)
++ 
+
 ## ExcelChart0 c#调用Excel绘制图表
 + [c#调用Excel绘制图表 - 海之殇 - 博客园](https://www.cnblogs.com/fuhai/p/4741877.html)
 + 原以为NetOffice可以免装MS Office来只做Excel图表，结果发现还是依赖于MS Office
