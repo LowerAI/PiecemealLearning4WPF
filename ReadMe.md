@@ -1,6 +1,15 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+
+# BV14h411X7yt【WPF】键盘秘籍指令的做法
++ [原文链接](https://www.bilibili.com/video/BV14h411X7yt)
++ 怎么做类似于 搓招 指令的东西，使用了队列得先入先出特性，以及数组元素得数量来限制队列存储的按键个数
+
+## BV1Dh411d7w3【WPF】颜色过渡动画怎么做？
++ [原文链接](https://www.bilibili.com/video/BV1Dh411d7w3)
++ 通过事件触发器种的ColorAnimation来控制颜色的渐变，关键点在于`Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"`这句代码
+
 ## BV15V411U73V【WPF】教你做一个歌词提词器？
 + [原文链接](https://www.bilibili.com/video/BV15V411U73V)
 + 
@@ -200,9 +209,17 @@
 ## BV1mJ411F7zG WPF入门基础教程(合集)
 + [原文链接](https://www.bilibili.com/video/BV1mJ411F7zG)抄写而来
 
+## M3U8 Downloader
++ 对仿制[M3U8 Downloader项目](https://github.com/nilaoda/The-New-M3U8-Downloader)做二次开发
++ 问题列表：
+  + [获取WPF窗体/控件的句柄/当前进程的句柄 - 钱恩基 - 博客园](https://www.cnblogs.com/xiesong/p/6676774.html)
+  + [在WPF中调用文件夹浏览/选择对话框_weixin_30659829的博客-CSDN博客_wpf 调用系统文件选择](
+https://blog.csdn.net/weixin_30659829/article/details/99957686)
+  + [请问WPF 设置 margin 的 value 顺序是上右下左还是上左下右？_百度知道](https://zhidao.baidu.com/question/490781963.html)
+
 ### P2-布局
 #### 1.布局的基本原则
-+ 一个窗口中只能包含一个元素
++ 一个窗口中只能包含一个元素(即根元素)
 + 不应使用坐标设置元素的位置
 + 大多数情况不应显式定义元素尺寸
 + 支持多元素时，可使用嵌套容器

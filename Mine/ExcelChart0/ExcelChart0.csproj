@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetOffice.Core" Version="1.7.4.11" />
+    <PackageReference Include="NetOffice.Excel" Version="1.7.4.11" />
+  </ItemGroup>
+
+</Project>
