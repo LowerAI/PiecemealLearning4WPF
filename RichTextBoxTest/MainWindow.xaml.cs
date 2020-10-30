@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RichTextBoxTest
+namespace RichTextBoxDemo
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -72,25 +73,32 @@ namespace RichTextBoxTest
 
         private void btnClick_Click(object sender, RoutedEventArgs e)
         {
-            OutputEcho(EchoContentType.Progress, count.ToString(), true);
-            //TextPointer textPointer = rtb_Echo.Selection.Start;
-            ////TextPointer lineStartPointer = textPointer.GetLineStartPosition(0);
-            //textPointer.DeleteTextInRun(count.ToString().Length);
-            count++;
-            //textPointer.InsertTextInRun(count.ToString());
-            //TextPointer prevPointer = textPointer.GetPositionAtOffset("<进度>".Length);
-            //TextRange textRange = new TextRange(lineStartPointer, textPointer);
-            //textRange.Text = "";
-            ////在开始位置插入内容 
-            //Run run = new Run("测试", tp0);
-            //在插入内容的结尾到原来选中部分的结尾——原来选中部分的文字 清除掉 
-            //TextPointer pointer = run.ContentEnd;
-            //TextRange textRange = new TextRange(pointer, rtb_Echo.Selection.End);
-            //textRange.Text = "";
-            if (count % 10 == 0)
+            Action action = () =>
             {
-                OutputEcho(EchoContentType.Wrap); 
-            }
+                OutputEcho(EchoContentType.Progress, count.ToString(), true);
+
+                count++;
+            };
+
+            Action action1 = () =>
+            {
+                for (int i = 0; i <= 1000000; i++)
+                {
+                    this.Dispatcher.BeginInvoke(action);
+                }
+            };
+            Task.Factory.StartNew(action1);
+
+            //for (int i = 0; i <= 1000000; i++)
+            //{
+            //    //Thread.Sleep(500);
+            //    //this.Dispatcher.BeginInvoke(action);
+            //}
+                        
+            //if (count % 10 == 0)
+            //{
+            //    OutputEcho(EchoContentType.Wrap);
+            //}
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
@@ -164,28 +172,18 @@ namespace RichTextBoxTest
             {
                 if (echoContentType == EchoContentType.Progress)
                 {
-                    TextPointer selectionStartPointer = rtb_Echo.Selection.End;
-                    TextPointer lineStartPointer = selectionStartPointer.GetLineStartPosition(0);
-                    if (selectionStartPointer.LogicalDirection == LogicalDirection.Forward)
+                    var parent = rtb_Echo.Selection.Start.Parent;
+                    if (parent is Run)
                     {
-                        TextRange textRange = new TextRange(lineStartPointer, selectionStartPointer);
-                        textRange.Text = "";
-                        //selectionStartPointer.DeleteTextInRun(content.Length);
-                        selectionStartPointer.InsertTextInRun(content); 
+                        ((Run)parent).Text = content;
                     }
-                    else
+                    else if (parent is FlowDocument)
                     {
-                        
-                        Run run = new Run(content, lineStartPointer);
-                        //在插入内容的结尾到原来选中部分的结尾——原来选中部分的文字 清除掉 
-                        TextPointer pointer = run.ContentEnd;
-                        TextRange textRange = new TextRange(pointer, selectionStartPointer);
-                        textRange.Text = "";
+                        Run run = new Run(content, rtb_Echo.Selection.Start);
                     }
                 }
                 else if (echoContentType == EchoContentType.Wrap)
                 {
-                    //rtb_Echo.AppendText("\n");
                     TextPointer textPointer = rtb_Echo.Selection.Start;
                     textPointer.InsertLineBreak();
                 }
@@ -223,7 +221,8 @@ namespace RichTextBoxTest
                 rtb_Echo.ScrollToEnd();
             };
 
-            if (sync)
+            //if (sync)
+            if (rtb_Echo.CheckAccess())
             {
                 action();
             }
