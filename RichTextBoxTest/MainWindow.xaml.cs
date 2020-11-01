@@ -75,19 +75,19 @@ namespace RichTextBoxDemo
         {
             Action action = () =>
             {
+                //OutputEcho(EchoContentType.Title, count.ToString(), true);
                 OutputEcho(EchoContentType.Progress, count.ToString(), true);
-
                 count++;
             };
 
-            Action action1 = () =>
-            {
-                for (int i = 0; i <= 1000000; i++)
-                {
-                    this.Dispatcher.BeginInvoke(action);
-                }
-            };
-            Task.Factory.StartNew(action1);
+            //Action action1 = () =>
+            //{
+            //    for (int i = 0; i <= 1000000; i++)
+            //    {
+            //        this.Dispatcher.BeginInvoke(action);
+            //    }
+            //};
+            Task.Factory.StartNew(action);
 
             //for (int i = 0; i <= 1000000; i++)
             //{
@@ -172,15 +172,24 @@ namespace RichTextBoxDemo
             {
                 if (echoContentType == EchoContentType.Progress)
                 {
-                    var parent = rtb_Echo.Selection.Start.Parent;
-                    if (parent is Run)
-                    {
-                        ((Run)parent).Text = content;
-                    }
-                    else if (parent is FlowDocument)
-                    {
-                        Run run = new Run(content, rtb_Echo.Selection.Start);
-                    }
+                    //var parent = rtb_Echo.Selection.Start.Parent;
+                    //if (parent is Run)
+                    //{
+                    //    ((Run)parent).Text = content;
+                    //}
+                    //else if (parent is FlowDocument)
+                    //{
+                    //    Run run = new Run(content, rtb_Echo.Selection.Start);
+                    //}
+                    ProgressBar progressBar = new ProgressBar();
+                    progressBar.Value = 80;
+                    progressBar.Maximum = 100;
+                    progressBar.Height = 50;
+                    progressBar.Width = 300;
+                    InlineUIContainer inline = new InlineUIContainer(progressBar);
+                    Paragraph paragraph = new Paragraph();
+                    paragraph.Inlines.Add(inline);
+                    rtb_Echo.Document.Blocks.Add(paragraph);
                 }
                 else if (echoContentType == EchoContentType.Wrap)
                 {
@@ -213,6 +222,7 @@ namespace RichTextBoxDemo
                     }
 
                     rtb_Echo.Document.Blocks.Add(paragraph);
+                    //rtb_Echo.Selection.ApplyPropertyValue(TextElement.FontStretchProperty, FontStretch.FromOpenTypeStretch(3));
                 }
                 if (wrap)
                 {
