@@ -49,17 +49,21 @@ namespace RichTextBoxDemo
             /// </summary>
             ShowNumber = 4,
             /// <summary>
+            /// 永久保存写号
+            /// </summary>
+            SaveNumberForever = 5,
+            /// <summary>
             /// 复位
             /// </summary>
-            Reset = 5,
+            Reset = 6,
             /// <summary>
             /// 强制复位
             /// </summary>
-            ForceReset = 6,
+            ForceReset = 7,
             /// <summary>
             /// 设置板卡当前串口波特率
             /// </summary>
-            SetCOMBaudRate = 7
+            SetCOMBaudRate = 8
         }
 
         /// <summary>
@@ -109,18 +113,18 @@ namespace RichTextBoxDemo
         /// <summary>
         /// 指令字典
         /// </summary>
-        public Dictionary<string, string> dictInstruction = new Dictionary<string, string>
+        public Dictionary<InstructionType, string> dictInstruction = new Dictionary<InstructionType, string>
         {
-            { "ShowCOM", "com" },
-            { "DownloadFullFirmwareMode", "$#**#x{baudrate}!" },
-            { "WriteNumberMode", "$*##*PNSN#**#" },
-            { "WriteNumber", "pn {pn} sn {sn}" },
-            { "ShowNumber", "showpnsn" },
-            { "Reset", "reset" },
-            { "ForceReset", "freset" },
-            { "SetCOMBaudRate", "com {com} {baudrate}" }
+            { InstructionType.ShowCOM, "com" },
+            { InstructionType.DownloadFullFirmwareMode, "$#**#x{baudrate}!" },
+            { InstructionType.WriteNumberMode, "$*##*PNSN#**#" },
+            { InstructionType.WriteNumber, "pn {pn} sn {sn}" },
+            { InstructionType.ShowNumber, "showpnsn" },
+            { InstructionType.Reset, "reset" },
+            { InstructionType.ForceReset, "freset" },
+            { InstructionType.SetCOMBaudRate, "com {com} {baudrate}" }
         };
-        
+
         public Dictionary<string, string> dict = new Dictionary<string, string>
         {
             { "key", "value" }
@@ -134,7 +138,7 @@ namespace RichTextBoxDemo
 
         private void btnClick_Click(object sender, RoutedEventArgs e)
         {
-            string instruction = dictInstruction[InstructionType.Reset.ToString()];
+            //string instruction = dictInstruction[InstructionType.Reset];
             Action action = () =>
             {
                 //OutputEcho(EchoContentType.Title, count.ToString(), true);
@@ -243,15 +247,36 @@ namespace RichTextBoxDemo
                     //{
                     //    Run run = new Run(content, rtb_Echo.Selection.Start);
                     //}
-                    ProgressBar progressBar = new ProgressBar();
-                    progressBar.Value = 80;
-                    progressBar.Maximum = 100;
-                    progressBar.Height = 50;
-                    progressBar.Width = 300;
-                    InlineUIContainer inline = new InlineUIContainer(progressBar);
-                    Paragraph paragraph = new Paragraph();
-                    paragraph.Inlines.Add(inline);
-                    rtb_Echo.Document.Blocks.Add(paragraph);
+                    //var pb = rtb_Echo.FindName("pb_ffw");
+                    object pb = null;
+                    var blockObj = rtb_Echo.Document.Blocks.FirstOrDefault((block) =>
+                    {
+                        Paragraph paragraph = block as Paragraph;
+                        var pgh = paragraph.Inlines.FirstOrDefault((inline) =>
+                        {
+                            pb = inline.FindName("pb_ffw");
+                            return pb == null;
+                        });
+                        return pgh == null;
+                    });
+                    if (pb == null)
+                    {
+                        ProgressBar progressBar = new ProgressBar();
+                        progressBar.Name = "pb_ffw";
+                        progressBar.Value = 80;
+                        progressBar.Maximum = 100;
+                        progressBar.Height = 50;
+                        progressBar.Width = 300;
+                        InlineUIContainer inline = new InlineUIContainer(progressBar);
+                        Paragraph paragraph = new Paragraph();
+                        paragraph.Inlines.Add(inline);
+                        rtb_Echo.Document.Blocks.Add(paragraph); 
+                    }
+                    else
+                    {
+                        ProgressBar progressBar = pb as ProgressBar;
+                        progressBar.Value += 81;
+                    }
                 }
                 else if (echoContentType == EchoContentType.Wrap)
                 {
