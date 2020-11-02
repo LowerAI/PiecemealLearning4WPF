@@ -24,6 +24,45 @@ namespace RichTextBoxDemo
         private int count = 0;
 
         /// <summary>
+        /// 指令内容类型
+        /// </summary>
+        public enum InstructionType
+        {
+            /// <summary>
+            /// 显示板卡串口
+            /// </summary>
+            ShowCOM = 0,
+            /// <summary>
+            /// 进入下载全部固件模式
+            /// </summary>
+            DownloadFullFirmwareMode = 1,
+            /// <summary>
+            /// 进入写号模式
+            /// </summary>
+            WriteNumberMode = 2,
+            /// <summary>
+            /// 写号
+            /// </summary>
+            WriteNumber = 3,
+            /// <summary>
+            /// 查看写号
+            /// </summary>
+            ShowNumber = 4,
+            /// <summary>
+            /// 复位
+            /// </summary>
+            Reset = 5,
+            /// <summary>
+            /// 强制复位
+            /// </summary>
+            ForceReset = 6,
+            /// <summary>
+            /// 设置板卡当前串口波特率
+            /// </summary>
+            SetCOMBaudRate = 7
+        }
+
+        /// <summary>
         /// 回显内容类型
         /// </summary>
         private enum EchoContentType
@@ -66,6 +105,28 @@ namespace RichTextBoxDemo
             Wrap
         }
 
+        #region    字典 start
+        /// <summary>
+        /// 指令字典
+        /// </summary>
+        public Dictionary<string, string> dictInstruction = new Dictionary<string, string>
+        {
+            { "ShowCOM", "com" },
+            { "DownloadFullFirmwareMode", "$#**#x{baudrate}!" },
+            { "WriteNumberMode", "$*##*PNSN#**#" },
+            { "WriteNumber", "pn {pn} sn {sn}" },
+            { "ShowNumber", "showpnsn" },
+            { "Reset", "reset" },
+            { "ForceReset", "freset" },
+            { "SetCOMBaudRate", "com {com} {baudrate}" }
+        };
+        
+        public Dictionary<string, string> dict = new Dictionary<string, string>
+        {
+            { "key", "value" }
+        };
+        #endregion 字典 end
+
         public MainWindow()
         {
             InitializeComponent();
@@ -73,6 +134,7 @@ namespace RichTextBoxDemo
 
         private void btnClick_Click(object sender, RoutedEventArgs e)
         {
+            string instruction = dictInstruction[InstructionType.Reset.ToString()];
             Action action = () =>
             {
                 //OutputEcho(EchoContentType.Title, count.ToString(), true);
