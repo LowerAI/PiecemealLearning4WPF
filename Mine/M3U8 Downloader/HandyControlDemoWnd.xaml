@@ -1,0 +1,23 @@
+﻿<hc:BlurWindow x:Class="M3U8_Downloader.HandyControlDemoWnd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+        Title="HandyControlDemoWnd" Height="450" Width="800">
+    <Grid>
+        <hc:ToggleBlock FontSize="80" IsChecked="{x:Null}">
+            <hc:ToggleBlock.UnCheckedContent>
+                <Border Background="{DynamicResource DangerBrush}">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="断开" Foreground="{DynamicResource TextIconBrush}"/>
+                </Border>
+            </hc:ToggleBlock.UnCheckedContent>
+            <hc:ToggleBlock.CheckedContent>
+                <Border Background="{DynamicResource SuccessBrush}">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="连接" Foreground="{DynamicResource TextIconBrush}"/>
+                </Border>
+            </hc:ToggleBlock.CheckedContent>
+        </hc:ToggleBlock>
+    </Grid>
+</hc:BlurWindow>

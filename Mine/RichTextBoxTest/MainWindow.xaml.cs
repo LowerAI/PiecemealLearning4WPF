@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -134,6 +135,12 @@ namespace RichTextBoxDemo
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            SerialPort serialPort = new SerialPort();
+            //serialPort
         }
 
         private void btnClick_Click(object sender, RoutedEventArgs e)
