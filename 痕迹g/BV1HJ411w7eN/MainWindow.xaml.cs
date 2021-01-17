@@ -1,7 +1,6 @@
 ﻿using BV1HJ411w7eN.Models;
 using BV1HJ411w7eN.ViewModel;
 using GalaSoft.MvvmLight.Messaging;
-using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;

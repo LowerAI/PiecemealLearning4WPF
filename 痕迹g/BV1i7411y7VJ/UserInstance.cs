@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BV1i7411y7VJ
+﻿namespace BV1i7411y7VJ
 {
     public class UserInstance
     {

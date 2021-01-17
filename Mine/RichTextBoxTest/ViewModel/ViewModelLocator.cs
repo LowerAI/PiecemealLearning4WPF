@@ -13,10 +13,8 @@
 */
 
 using CommonServiceLocator;
-using GalaSoft.MvvmLight;
+//using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
-//using ServiceLocation;
-//using Microsoft.Practices.ServiceLocation;
 
 namespace RichTextBoxDemo.ViewModel
 {
@@ -44,17 +42,17 @@ namespace RichTextBoxDemo.ViewModel
             ////    SimpleIoc.Default.Register<IDataService, DataService>();
             ////}
 
-            SimpleIoc.Default.Register<MainViewModel>();
+            //SimpleIoc.Default.Register<MainViewModel>();
         }
 
-        public MainViewModel Main
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<MainViewModel>();
-            }
-        }
-        
+        //public MainViewModel Main
+        //{
+        //    get
+        //    {
+        //        return ServiceLocator.Current.GetInstance<MainViewModel>();
+        //    }
+        //}
+
         public static void Cleanup()
         {
             // TODO Clear the ViewModels

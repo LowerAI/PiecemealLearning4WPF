@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace M3U8_Downloader.Models
+﻿namespace M3U8_Downloader.Models
 {
     /// <summary>
     /// 视频文件类型

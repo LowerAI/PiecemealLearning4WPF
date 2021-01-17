@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BV1XJ411z7QT
+﻿namespace BV1XJ411z7QT
 {
     public class ItemModel
     {

@@ -2,18 +2,11 @@
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace RichTextBoxDemo
 {
@@ -167,7 +160,7 @@ namespace RichTextBoxDemo
             //    //Thread.Sleep(500);
             //    //this.Dispatcher.BeginInvoke(action);
             //}
-                        
+
             //if (count % 10 == 0)
             //{
             //    OutputEcho(EchoContentType.Wrap);
@@ -277,7 +270,7 @@ namespace RichTextBoxDemo
                         InlineUIContainer inline = new InlineUIContainer(progressBar);
                         Paragraph paragraph = new Paragraph();
                         paragraph.Inlines.Add(inline);
-                        rtb_Echo.Document.Blocks.Add(paragraph); 
+                        rtb_Echo.Document.Blocks.Add(paragraph);
                     }
                     else
                     {
