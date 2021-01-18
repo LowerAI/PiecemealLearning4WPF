@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BV1uJ411n7Zw.Entity
+﻿namespace BV1uJ411n7Zw.Entity
 {
     public class UserModule
     {

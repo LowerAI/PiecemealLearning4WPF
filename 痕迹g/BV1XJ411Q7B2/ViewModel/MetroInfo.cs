@@ -1,7 +1,4 @@
 ﻿using MaterialDesignThemes.Wpf.Transitions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Media;
 
 namespace BV1XJ411Q7B2.ViewModel

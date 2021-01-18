@@ -1,9 +1,6 @@
 ﻿using NetOffice.ExcelApi;
 using NetOffice.ExcelApi.Enums;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Range = NetOffice.ExcelApi.Range;
 //using Microsoft.Office.Interop.Excel;
 
@@ -30,7 +27,7 @@ namespace ExcelChart0
         public void CreateChart(Range rg, Range data, Object type = null, XlRowCol xlrc = XlRowCol.xlColumns, string title = null, string CategoryTitle = null, string ValueTitle = null)
         {
             ChartObjects charts = (ChartObjects)sheet.ChartObjects(Type.Missing);
-            ChartObject chartObj = charts.Add(Convert.ToDouble(rg.Left??0d), Convert.ToDouble(rg.Top??0d), Convert.ToDouble(rg.Width??200d), Convert.ToDouble(rg.Height??140d));
+            ChartObject chartObj = charts.Add(Convert.ToDouble(rg.Left ?? 0d), Convert.ToDouble(rg.Top ?? 0d), Convert.ToDouble(rg.Width ?? 200d), Convert.ToDouble(rg.Height ?? 140d));
             Chart chart = chartObj.Chart;
             chart.ChartWizard(data, type, Type.Missing, xlrc, 1, 1, true, title, CategoryTitle, ValueTitle, Type.Missing);
             chart.Legend.Position = XlLegendPosition.xlLegendPositionTop;

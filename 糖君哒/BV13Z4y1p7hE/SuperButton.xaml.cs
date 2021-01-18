@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BV13Z4y1p7hE
@@ -26,7 +20,7 @@ namespace BV13Z4y1p7hE
 
         private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var target = Template.FindName("MyEllipse",this) as EllipseGeometry;
+            var target = Template.FindName("MyEllipse", this) as EllipseGeometry;
             target.Center = Mouse.GetPosition(this);  // 获取当前鼠标指针的坐标
             var animation = new DoubleAnimation
             {

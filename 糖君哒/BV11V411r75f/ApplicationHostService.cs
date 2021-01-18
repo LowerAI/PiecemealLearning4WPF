@@ -1,8 +1,8 @@
+//using AIStream.HuishangBank.DocumentBot;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-//using AIStream.HuishangBank.DocumentBot;
-using Microsoft.Extensions.Hosting;
 
 namespace BV11V411r75f
 {

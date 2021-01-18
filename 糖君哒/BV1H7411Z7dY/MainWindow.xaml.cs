@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace BV1H7411Z7dY
 {
@@ -56,11 +45,11 @@ namespace BV1H7411Z7dY
         {
             if (this.Width + e.HorizontalChange > 0)
             {
-                this.Width += e.HorizontalChange; 
+                this.Width += e.HorizontalChange;
             }
             if (this.Height + e.VerticalChange > 0)
             {
-                this.Height += e.VerticalChange; 
+                this.Height += e.VerticalChange;
             }
         }
     }

@@ -1,28 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using GalaSoft.MvvmLight.Messaging;
+using M3U8_Downloader.Models;
+using M3U8_Downloader.ViewModel;
+using Microsoft.WindowsAPICodePack.Taskbar;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using WinForms = System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Interop;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Xml;
-using Microsoft.WindowsAPICodePack.Taskbar;
-using System.Text.RegularExpressions;
 using System.Windows.Threading;
-using M3U8_Downloader.ViewModel;
-using M3U8_Downloader.Models;
-using GalaSoft.MvvmLight.Messaging;
+using System.Xml;
+using WinForms = System.Windows.Forms;
 
 namespace M3U8_Downloader
 {
@@ -77,7 +68,7 @@ namespace M3U8_Downloader
 
             Messenger.Default.Register<string>(this, "ODR", ReadStdOutputAction);
             Messenger.Default.Register<string>(this, "EDR", ReadErrOutputAction);
-            Messenger.Default.Register<Func<IntPtr, bool, bool>> (this, "CPE", CmdProcessExited);
+            Messenger.Default.Register<Func<IntPtr, bool, bool>>(this, "CPE", CmdProcessExited);
             this.DataContext = mvm;
         }
 
@@ -234,7 +225,7 @@ namespace M3U8_Downloader
             Regex size = new Regex(@"[1-9][0-9]{0,}kB time", RegexOptions.Compiled | RegexOptions.Singleline);//取已下载大小
             var sizekb = size.Matches(txtblk_forRegex.Text);
             if (time.Count > 0 && sizekb.Count > 0)
-            { 
+            {
                 txtblk_Downloaded.Text = "[已下载：" + time.OfType<Match>().Last() + "，" + mvm.FormatFileSize(Convert.ToDouble(sizekb.OfType<Match>().Last().ToString().Replace("kB time", "")) * 1024) + "]";
             }
 

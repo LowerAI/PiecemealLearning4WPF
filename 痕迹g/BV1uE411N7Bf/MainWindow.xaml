@@ -21,7 +21,7 @@
 
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Button Command="{Binding RelativeSource={RelativeSource AncestorType=local:MainWindow},Path=DataContext.OpenCommand}" CommandParameter="{Binding Name}" Content="{Binding Name}" Height="40" Margin="5" />
+                    <Button Command="{Binding RelativeSource={RelativeSource AncestorType=local:MainWindow,AncestorLevel=1},Path=DataContext.OpenCommand}" CommandParameter="{Binding Name}" Content="{Binding Name}" Height="40" Margin="5" />
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>

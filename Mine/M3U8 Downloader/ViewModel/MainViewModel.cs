@@ -2,7 +2,6 @@
 using GalaSoft.MvvmLight.Messaging;
 using M3U8_Downloader.Models;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
