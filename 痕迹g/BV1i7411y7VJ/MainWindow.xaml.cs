@@ -21,6 +21,7 @@ namespace BV1i7411y7VJ
             instances = new List<UserInstance>();
         }
 
+        // 启动服务
         private async void btn_Start(object sender, RoutedEventArgs e)
         {
             var optionsBuilder = new MqttServerOptionsBuilder().WithDefaultEndpoint().WithDefaultEndpointPort(1883).WithConnectionValidator(c =>
@@ -68,6 +69,7 @@ namespace BV1i7411y7VJ
             await server.StartAsync(optionsBuilder.Build());
         }
 
+        // 发送消息
         private void btn_Send(object sender, RoutedEventArgs e)
         {
             instances.ForEach(arg =>
@@ -77,7 +79,7 @@ namespace BV1i7411y7VJ
                     Topic = arg.clientid,
                     QualityOfServiceLevel = MQTTnet.Protocol.MqttQualityOfServiceLevel.ExactlyOnce,
                     Retain = false,
-                    Payload = Encoding.UTF8.GetBytes("{DateTime.Now}:服务器：明天都不要来上班了！")
+                    Payload = Encoding.UTF8.GetBytes("{DateTime.Now}:服务器：疫情期间在家远程办公！")
                 });
             });
         }

@@ -41,6 +41,7 @@ namespace BV1i7411y7VJ.Client
             await client.ConnectAsync(options);
         }
 
+        // 发送消息
         private void btn_Send(object sender, RoutedEventArgs e)
         {
             var msg = new MqttApplicationMessageBuilder().WithTopic(clientId).WithPayload($"{DateTime.Now}:你好").WithExactlyOnceQoS().WithRetainFlag().Build();
