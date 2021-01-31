@@ -1,6 +1,10 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+# BV1dh411k74E【WPF】仿游戏王决斗链接做一个指针动画
++ [原文链接](https://www.bilibili.com/video/BV1dh411k74E?p=2&spm_id_from=pageDriver)
++ 跟随鼠标指针的水波纹涟漪
+
 # BV1Xa411A7Eu【WPF·音频】怎样在调戏电脑的时候播放音效？
 + [原文链接](https://www.bilibili.com/video/BV1Xa411A7Eu)
 + 通过Window.Resource种的样式触发器和Window.Trigger种的事件触发器分别实现音效的播放。
