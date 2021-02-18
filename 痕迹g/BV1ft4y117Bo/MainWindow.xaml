@@ -6,7 +6,7 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:local="clr-namespace:BV1ft4y117Bo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1000" Width="1600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80" />
@@ -19,18 +19,114 @@
         </StackPanel>
 
         <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <lvc:CartesianChart x:Name="c1">
-                
+            <lvc:CartesianChart x:Name="c1" Grid.Row="0" Grid.Column="0">
+                <lvc:CartesianChart.Series>
+                    <!--设置Series的类型为 Line 类型, 该类型提供了一些折线图的实现-->
+                    <lvc:LineSeries/>
+                </lvc:CartesianChart.Series>
             </lvc:CartesianChart>
 
-            <lvc:CartesianChart x:Name="c2" Grid.Column="1">
+            <lvc:CartesianChart x:Name="c2" Grid.Row="0" Grid.Column="1"
+                                LegendLocation="Top" Background="#FFEFD5">
+                <lvc:CartesianChart.Series>
+                    <!--设置Series的类型为 Line 类型, 该类型提供了一些折线图的实现-->
+                    <lvc:LineSeries Values="1,2,3,4,5,6"/>
+                    <lvc:LineSeries Values="2,4,6,8,10,12"/>
+                </lvc:CartesianChart.Series>
 
+                <!--定义Y轴-->
+                <lvc:CartesianChart.AxisY>
+                    <!-- 定义Y轴名称 -->
+                    <lvc:Axis Title="Value"></lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+
+                <!--定义X轴-->
+                <lvc:CartesianChart.AxisX>
+                    <!-- 定义X轴名称 -->
+                    <lvc:Axis Title="Type"></lvc:Axis>
+                </lvc:CartesianChart.AxisX>
             </lvc:CartesianChart>
+
+            <lvc:CartesianChart x:Name="c3" Grid.Row="1" Grid.Column="0"
+                                LegendLocation="Top" Background="#FFEFD5">
+                <lvc:CartesianChart.VisualElements>
+                    <lvc:VisualElement X="0.5" Y="8">
+                        <lvc:VisualElement.UIElement>
+                            <TextBlock Foreground="Green">
+                            Hello!, this is a note merged in the chart.
+                            </TextBlock>
+                        </lvc:VisualElement.UIElement>
+                    </lvc:VisualElement>
+                </lvc:CartesianChart.VisualElements>
+
+                <lvc:CartesianChart.Series>
+                    <lvc:LineSeries DataLabels="False" Stroke="Red"
+                            StrokeThickness="1" StrokeDashArray="0"
+                            LineSmoothness="1" Foreground="Red"
+                            Fill="Yellow" PointGeometrySize="10"
+                            Values="2,4,8,5,10,7">
+                        <lvc:LineSeries.PointGeometry>
+                            <GeometryGroup>
+                                <RectangleGeometry Rect="50,50,25,25" />
+                            </GeometryGroup>
+                        </lvc:LineSeries.PointGeometry>
+                    </lvc:LineSeries>
+
+                    <lvc:LineSeries DataLabels="False" Stroke="#32CD32"
+                            StrokeThickness="1" StrokeDashArray="5"
+                            LineSmoothness="1" Foreground="Red"
+                            Fill="#FFA07A" PointGeometrySize="10"
+                            Values="1,2,5,1,5,4">
+                        <lvc:LineSeries.PointGeometry>
+                            <GeometryGroup>
+                                <RectangleGeometry Rect="50,50,25,25" />
+                            </GeometryGroup>
+                        </lvc:LineSeries.PointGeometry>
+                    </lvc:LineSeries>
+                </lvc:CartesianChart.Series>
+
+                <!--定义Y轴-->
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="Value" ShowLabels="True">
+                        <lvc:Axis.Separator>
+                            <lvc:Separator StrokeThickness="1" Stroke="Blue"/>
+                        </lvc:Axis.Separator>
+                    </lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+
+                <!--定义X轴-->
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Type" LabelsRotation="45" Labels="A,B,C,D,E,F" ShowLabels="True" >
+                        <lvc:Axis.Separator>
+                            <lvc:Separator StrokeThickness="1" Stroke="Red"/>
+                        </lvc:Axis.Separator>
+                    </lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+            </lvc:CartesianChart>
+
+            <lvc:PieChart x:Name="c4" Grid.Row="1" Grid.Column="1"
+                          LegendLocation="Bottom" DataClick="Chart_onDataClick"
+                          Hoverable="False" DataTooltip="{x:Null}">
+                <lvc:PieChart.Series>
+                    <lvc:PieSeries Title="Maria" Values="3" DataLabels="True"
+                               LabelPoint="{Binding PointLabel}"/>
+                    <lvc:PieSeries Title="Charles" Values="4" DataLabels="True"
+                               LabelPoint="{Binding PointLabel}"/>
+                    <lvc:PieSeries Title="Frida" Values="6" DataLabels="True"
+                               LabelPoint="{Binding PointLabel}"/>
+                    <lvc:PieSeries Title="Frederic" Values="2" DataLabels="True"
+                               LabelPoint="{Binding PointLabel}"/>
+                </lvc:PieChart.Series>
+            </lvc:PieChart>
         </Grid>
     </Grid>
 </Window>

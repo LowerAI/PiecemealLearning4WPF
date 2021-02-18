@@ -1,5 +1,6 @@
 ﻿using LiveCharts;
 using LiveCharts.Wpf;
+using System;
 using System.Windows;
 
 namespace BV1ft4y117Bo
@@ -12,11 +13,18 @@ namespace BV1ft4y117Bo
         public MainWindow()
         {
             InitializeComponent();
+
+            PointLabel = chartPoint =>
+                string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation);
+
+            DataContext = this;
         }
 
         public SeriesCollection series { get; set; }
 
         public SeriesCollection series1 { get; set; }
+
+        public Func<ChartPoint, string> PointLabel { get; set; }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -35,6 +43,11 @@ namespace BV1ft4y117Bo
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Chart_onDataClick(object sender, ChartPoint chartPoint)
         {
 
         }
