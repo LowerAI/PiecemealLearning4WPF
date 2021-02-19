@@ -89,6 +89,8 @@
 ## [痕迹g]BV1ft4y117Bo WPF图表LiveChart性能增强版对比
 + [原文链接](https://www.bilibili.com/video/BV1ft4y117Bo)
 + [WPF LiveChart 图表详解 - 痕迹g - 博客园](https://www.cnblogs.com/zh7791/p/12617961.html)
++ 图5[WPF图表Live Charts（三）柱状图_deadline-CSDN博客_livechart柱状图](https://blog.csdn.net/qq_23176133/article/details/86763805)
++ 图6[wpf使用livecharts---柱状图顶端标出数值 - 安然亦智 - 博客园](https://www.cnblogs.com/wanggang2016/p/13717682.html
 
 ## [糖君哒]BV13Z4y1p7hE【WPF】按钮波纹点击特效
 + [原文链接](https://www.bilibili.com/video/BV13Z4y1p7hE)
