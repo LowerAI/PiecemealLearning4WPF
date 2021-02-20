@@ -1,22 +1,17 @@
 ﻿using LiveCharts;
-using LiveCharts.Defaults;
 using LiveCharts.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Media;
 
-namespace BV1ft4y117Bo
+namespace LiveChartsDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        public SeriesCollection series { get; set; }
-        public SeriesCollection series1 { get; set; }
-        public Func<ChartPoint, string> PointLabel { get; set; }
-
         List<double> filesize = new List<double>();
         List<double> temperature = new List<double>();
         ColumnSeries sizeseries = new ColumnSeries(); //新建一条文件大小的柱状图
@@ -32,11 +27,6 @@ namespace BV1ft4y117Bo
         public MainWindow()
         {
             InitializeComponent();
-
-            #region    c4 start
-            PointLabel = chartPoint =>
-                string.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation);
-            #endregion c4 end
 
             #region    c5 start
             Labels5 = new string[] { "数据1", "数据2", "数据3" };
@@ -83,14 +73,14 @@ namespace BV1ft4y117Bo
             for (int i = 0; i < 4; i++)
             {
                 ColumnSeries seriesPowerSave = new ColumnSeries();
-                seriesPowerSave.Title = $"数据{i+1}";
+                seriesPowerSave.Title = $"数据{i + 1}";
                 //seriesPowerSave.Fill = new SolidColorBrush(Color.FromRgb(34, 139, 34));
                 seriesPowerSave.Fill = new SolidColorBrush(FillColors[i]);
                 seriesPowerSave.DataLabels = true;
                 seriesPowerSave.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
                 //显示文本内容
-                //seriesPowerSave.LabelPoint = p => p.Y.ToString();
-                //seriesPowerSave.LabelsPosition = BarLabelPosition.Top;
+                seriesPowerSave.LabelPoint = p => p.Y.ToString();
+                seriesPowerSave.LabelsPosition = BarLabelPosition.Top;
                 //seriesPowerSave.Values = new ChartValues<ObservablePoint>
                 //{
                 //    new ObservablePoint(0, 12),
@@ -115,32 +105,6 @@ namespace BV1ft4y117Bo
             #endregion c6 end
 
             DataContext = this;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ChartValues<double> arr = new ChartValues<double>();
-            for (int i = 0; i < 1000; i++)
-            {
-                arr.Add(i);
-            }
-
-            series = new SeriesCollection();
-            series.Add(new LineSeries
-            {
-                Values = arr
-            });
-            c1.Series = series;
-        }
-
-        private void Button1_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Chart_onDataClick(object sender, ChartPoint chartPoint)
-        {
-
         }
     }
 }

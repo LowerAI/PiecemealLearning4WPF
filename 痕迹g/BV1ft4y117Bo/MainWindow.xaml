@@ -142,7 +142,7 @@
                     </Border>
 
                     <Border BorderThickness="2" BorderBrush="Blue" Width="738" Height="480" Margin="10,10,32,10">
-                        <lvc:CartesianChart x:Name="c6" Series="{Binding SeriesCollection6}" LegendLocation="None" Margin="10,15,15,15">
+                        <lvc:CartesianChart x:Name="c6" Series="{Binding SeriesCollection6}" LegendLocation="Top" Margin="10,15,15,15">
                             <lvc:CartesianChart.AxisX>
                                 <lvc:Axis Labels="{Binding Labels6}" FontSize="12" LabelsRotation="0" DisableAnimations="True">
                                     <lvc:Axis.Separator>
