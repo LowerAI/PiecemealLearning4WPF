@@ -81,9 +81,9 @@ namespace LiveChartsDemo
             var ColumnTitles0 = new string[] { "L1C/A", "L2C(M)", "L5(Q)" };
             IChartValues[] chartValues0 = new ChartValues<double>[]
             {
-                new ChartValues<double> { 42.99, 30.71, 28.87, 37.45 },
-                new ChartValues<double> { 34.92, 0, 34.61, 25.23 },
-                new ChartValues<double> { 29.27, 0, 0, 0 }
+                new ChartValues<double> { 42.99, 30.71, 28.87, 37.45 }, // L1C/A
+                new ChartValues<double> { 34.92, 0, 34.61, 25.23 },     // L2C(M)
+                new ChartValues<double> { 29.27 }                       // L5(Q)
             };
             ColunmSeriesCollection0 = GetColunmSeriesData(ColumnTitles0, FillColors0, chartValues0);
             #endregion GPS end
@@ -94,9 +94,9 @@ namespace LiveChartsDemo
             var ColumnTitles1 = new string[] { "193", "194", "195" };
             IChartValues[] chartValues1 = new ChartValues<double>[]
             {
-                new ChartValues<double> { 31.82, 28.6, 33.96 },  // "L1C/A"
-                new ChartValues<double> { 28.57, 22.99, 25.85 }, // "L2C(M)"
-                new ChartValues<double> { 28.96, 0, 0 }          // "L5(Q)"
+                new ChartValues<double> { 31.82, 28.6, 33.96 },  // 193
+                new ChartValues<double> { 28.57, 22.99, 25.85 }, // 194
+                new ChartValues<double> { 28.96 }                // 195
             };
             ColunmSeriesCollection1 = GetColunmSeriesData(ColumnTitles1, FillColors1, chartValues1);
             #endregion QZSS end

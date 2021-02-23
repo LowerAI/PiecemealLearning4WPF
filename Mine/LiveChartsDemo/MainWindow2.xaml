@@ -8,10 +8,10 @@
         mc:Ignorable="d"
         Title="MainWindow2" Height="450" Width="800">
     <UniformGrid Columns="2">
-        <lvc:CartesianChart Name="c0" Series="{Binding ColunmSeriesCollection0}"
+        <lvc:CartesianChart Series="{Binding ColunmSeriesCollection0}"
                             LegendLocation="Top">
             <lvc:CartesianChart.AxisX>
-                <lvc:Axis Labels="{Binding ColumnXLabels0}"/>
+                <lvc:Axis Labels="{Binding ColumnXLabels0}" Foreground="Blue"/>
             </lvc:CartesianChart.AxisX>
             <lvc:CartesianChart.AxisY>
                 <lvc:Axis></lvc:Axis>
