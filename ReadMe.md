@@ -1,6 +1,11 @@
 # Piecemeal Learning 分散式学习
 + 本解决方案的所有项目均为根据B站大佬的视频学习或者现有开源项目模仿而来，目的是学习WPF的开发(界面设计为主)。其中“Mine”目录是我自己模仿开发的项目，“痕迹g”目录是按照痕迹大佬[主页](https://space.bilibili.com/32497462)的视频完全照搬而来，“糖君哒”目录是按照糖君大佬[主页](https://space.bilibili.com/8385275)的视频完全照搬而来。
 
+## [Mine]SocketAndNamedPipeDemo
++ SocketDemo[原文链接](https://www.cnblogs.com/memoyu/p/10764884.html)
++ NamedPipeDemo[原文链接](https://www.cnblogs.com/hzcya1995/archive/2012/01/30/13319560.html)
++ 试验Socket通讯
+
 ## [Moauris]BV1LD4y1X73s C# 学习路线：异步 Async 任务 Task 对象的使用
 + [原文链接](https://www.bilibili.com/video/BV1LD4y1X73s)
 + 讲解关于Task的WenAll和WhenAny的用法和区别
