@@ -5,7 +5,7 @@ using System.IO;
 using System.IO.Pipes;
 using System.Threading;
 
-namespace SocketAndNamedPipeDemo
+namespace InterProcessCommunicationServer
 {
     public class NamedPipeServer
     {

@@ -1,8 +1,8 @@
-﻿<Application x:Class="SocketAndNamedPipeDemo.App"
+﻿<Application x:Class="InterProcessCommunicationServer.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SocketAndNamedPipeDemo"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:InterProcessCommunicationServer"
+             StartupUri="SendMessageSender.xaml">
     <Application.Resources>
          
     </Application.Resources>

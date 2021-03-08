@@ -1,0 +1,13 @@
+﻿<Window x:Class="InterProcessCommunicationClient.SendMessageReceiver"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterProcessCommunicationClient"
+        mc:Ignorable="d"
+        Title="SendMessageReceiver" Height="350" Width="300">
+    <DockPanel Margin="10">
+        <Label DockPanel.Dock="Top" Content="消息列表"/>
+        <ListBox ItemsSource="{Binding MsgList}"/>
+    </DockPanel>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="InterProcessCommunicationServer.SendMessageSender"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterProcessCommunicationServer"
+        mc:Ignorable="d"
+        Title="SendMessageSender" Height="90" Width="330" ResizeMode="NoResize">
+    <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
+        <Label Content="int:"/>
+        <TextBox Name="txtInt" Text="" Width="60"/>
+        <Label Content="string:" Margin="15 0 0 0"/>
+        <TextBox Name="txtString" Text="" Width="80" Margin="0 0 15 0"/>
+        <Button Name="btnSend" Content="发送" Width="50" Click="btnSend_Click"/>
+    </StackPanel>
+</Window>

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Windows;
 
-namespace SocketAndNamedPipeDemo
+namespace InterProcessCommunicationServer
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑

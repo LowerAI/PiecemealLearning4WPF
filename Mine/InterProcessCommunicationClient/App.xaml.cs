@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace SocketAndNamedPipeDemo
+namespace InterProcessCommunicationClient
 {
     /// <summary>
     /// Interaction logic for App.xaml

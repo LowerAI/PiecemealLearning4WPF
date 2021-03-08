@@ -2,7 +2,7 @@
 using System.IO;
 using System.IO.Pipes;
 
-namespace SocketAndNamedPipeDemo
+namespace InterProcessCommunicationServer
 {
     public class NamedPipeClient : IDisposable
     {
