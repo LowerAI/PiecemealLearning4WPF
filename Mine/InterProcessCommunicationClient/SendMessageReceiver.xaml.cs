@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
@@ -8,6 +9,7 @@ namespace InterProcessCommunicationClient
 {
     /// <summary>
     /// SendMessageReceiver.xaml 的交互逻辑
+    /// 原文链接：C#中使用SendMessage在进程间传递数据的实例(https://mp.weixin.qq.com/s/MlU56EAnLuTeDJ5VJH3bWg)
     /// </summary>
     public partial class SendMessageReceiver : Window
     {
@@ -39,6 +41,7 @@ namespace InterProcessCommunicationClient
 
         private IntPtr DefWndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
+            Debug.WriteLine($"msg:{msg}");
             switch (msg)
             {
                 case WM_COPYDATA:
@@ -46,7 +49,7 @@ namespace InterProcessCommunicationClient
                     //Type t = cds.GetType();
                     //cds = (COPYDATASTRUCT)m.GetLParam(t);
                     cds = (COPYDATASTRUCT)Marshal.PtrToStructure(lParam, typeof(COPYDATASTRUCT));
-                    string strResult = cds.dwData.ToString() + ":" + cds.lpData;
+                    string strResult = $"{cds.dwData}:{cds.lpData}";
                     MsgList.Add(strResult);
                     break;
                 default:

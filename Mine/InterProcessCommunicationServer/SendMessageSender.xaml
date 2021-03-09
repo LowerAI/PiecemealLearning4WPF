@@ -8,9 +8,9 @@
         Title="SendMessageSender" Height="90" Width="330" ResizeMode="NoResize">
     <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
         <Label Content="int:"/>
-        <TextBox Name="txtInt" Text="" Width="60"/>
+        <TextBox Name="txtInt" VerticalContentAlignment="Center" Text="" Width="60"/>
         <Label Content="string:" Margin="15 0 0 0"/>
-        <TextBox Name="txtString" Text="" Width="80" Margin="0 0 15 0"/>
+        <TextBox Name="txtString" VerticalContentAlignment="Center" Text="" Width="80" Margin="0 0 15 0"/>
         <Button Name="btnSend" Content="发送" Width="50" Click="btnSend_Click"/>
     </StackPanel>
 </Window>

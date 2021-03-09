@@ -19,10 +19,23 @@ namespace InterProcessCommunicationServer
             public string lpData;
         }
 
-        //Win32 API函数
+        /// <summary>
+        /// 发送Windows消息
+        /// </summary>
+        /// <param name="hWnd"></param>
+        /// <param name="Msg"></param>
+        /// <param name="wParam"></param>
+        /// <param name="lParam"></param>
+        /// <returns></returns>
         [DllImport("User32.dll", EntryPoint = "SendMessage")]
-        private static extern int SendMessage(int hWnd, int Msg, int wParam, ref COPYDATASTRUCT lParam);
+        private static extern int SendMessage(int hWnd, int msg, int wParam, ref COPYDATASTRUCT lParam);
 
+        /// <summary>
+        /// 查找Windows窗口
+        /// </summary>
+        /// <param name="lpClassName"></param>
+        /// <param name="lpWindowName"></param>
+        /// <returns></returns>
         [DllImport("User32.dll", EntryPoint = "FindWindow")]
         private static extern int FindWindow(string lpClassName, string lpWindowName);
 
@@ -35,7 +48,7 @@ namespace InterProcessCommunicationServer
 
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
-            int hWnd = FindWindow(null, @"SendMessageReceiver");
+            int hWnd = FindWindow(null, "SendMessageReceiver");
             if (hWnd == 0)
             {
                 MessageBox.Show("555，未找到消息接受者！");
