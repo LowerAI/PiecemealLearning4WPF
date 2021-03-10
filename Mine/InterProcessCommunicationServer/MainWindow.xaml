@@ -5,7 +5,7 @@
          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
          xmlns:local="clr-namespace:InterProcessCommunicationServer"
          mc:Ignorable="d"
-         Title="MainWindow" Height="472.5" Width="605">
+         Title="MainWindow" Height="475" Width="605">
     <StackPanel>
         <Canvas Margin="10,20" Height="30">
             <Label Content="IP:" Height="30" Width="30" FontSize="18" HorizontalContentAlignment="Center" Canvas.Left="8"/>
@@ -14,13 +14,13 @@
             <TextBox x:Name="txtPort" Text="45000" Height="30" Width="150" FontSize="20" HorizontalContentAlignment="Center" Canvas.Left="263"/>
             <Button x:Name="btnStartServer" Content="开启服务" Height="30" Width="100" Canvas.Left="460"/>
         </Canvas>
-        <TextBox Name="txtLog" Height="300" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+        <TextBox Name="txtLog" Height="270" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
         <StackPanel Orientation="Horizontal" Margin="10">
             <Label Content="通讯方式:" Height="30" FontSize="18"/>
             <RadioButton Name="rb_TCP" GroupName="CommKind" Content="TCP" FontSize="18" VerticalContentAlignment="Center" Margin="10,0"/>
             <RadioButton Name="rb_Pipe" GroupName="CommKind" Content="管道" FontSize="18" VerticalContentAlignment="Center" Margin="10,0"/>
         </StackPanel>
-        <Canvas Height="30">
+        <Canvas Height="40">
             <TextBox x:Name="txtMsg" Height="30" Width="450" FontSize="20" HorizontalContentAlignment="Center" Canvas.Left="0"/>
             <Button x:Name="btnSendMsg" Content="发送消息" Height="30" Width="100" Canvas.Left="470"/>
         </Canvas>

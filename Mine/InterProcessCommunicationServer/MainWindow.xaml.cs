@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO;
-using System.IO.Pipes;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -35,7 +33,7 @@ namespace InterProcessCommunicationServer
         }
 
         /// <summary>
-        /// 关闭事件
+        /// 窗口关闭事件
         /// </summary>
         private void MainWindow_Closing(object sender, CancelEventArgs e)
         {
@@ -150,13 +148,13 @@ namespace InterProcessCommunicationServer
         /// </summary>
         private void BtnSendMsg_Click(object sender, RoutedEventArgs e)
         {
-            foreach (Socket proxSocket in clientScoketLis)
+            foreach (Socket clientSocket in clientScoketLis)
             {
-                if (proxSocket.Connected)//判断客户端是否还在连接
+                if (clientSocket.Connected)//判断客户端是否还在连接
                 {
                     byte[] data = Encoding.Default.GetBytes(this.txtMsg.Text);
                     //6、发送消息
-                    proxSocket.Send(data, 0, data.Length, SocketFlags.None); //指定套接字的发送行为
+                    clientSocket.Send(data, 0, data.Length, SocketFlags.None); //指定套接字的发送行为
                     this.txtMsg.Text = null;
                 }
             }
