@@ -1,0 +1,19 @@
+﻿<Window x:Class="BV1Rf4y147s8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BV1Rf4y147s8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="600" Name="FileTree">
+    <TreeView Margin="30" ItemsSource="{Binding}">
+        <TreeView.ItemTemplate>
+            <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="24" Height="24" Source="/Folder.jpg"/>
+                    <TextBlock Margin="8,0,0,0" Text="{Binding Name}" FontSize="16"/>
+                </StackPanel>
+            </HierarchicalDataTemplate>
+        </TreeView.ItemTemplate>
+    </TreeView>
+</Window>

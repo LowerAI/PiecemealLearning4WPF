@@ -135,9 +135,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveChartsDemo", "Mine\Live
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "香辣恐龙蛋", "香辣恐龙蛋", "{A32EAD71-DE20-4D13-8E74-D418C6DA817A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterProcessCommunicationClient", "Mine\InterProcessCommunicationClient\InterProcessCommunicationClient.csproj", "{8193AE3A-00CC-4D8C-843D-07F61C86DE15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterProcessCommunicationClient", "Mine\InterProcessCommunicationClient\InterProcessCommunicationClient.csproj", "{8193AE3A-00CC-4D8C-843D-07F61C86DE15}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterProcessCommunicationServer", "Mine\InterProcessCommunicationServer\InterProcessCommunicationServer.csproj", "{4BFA0D47-8C25-4803-98B9-BE88AFB86B00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BV1Rf4y147s8", "糖君哒\BV1Rf4y147s8\BV1Rf4y147s8.csproj", "{CAA2A9F5-4014-4109-8F40-33E42F7A3E94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -397,6 +399,10 @@ Global
 		{4BFA0D47-8C25-4803-98B9-BE88AFB86B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BFA0D47-8C25-4803-98B9-BE88AFB86B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BFA0D47-8C25-4803-98B9-BE88AFB86B00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA2A9F5-4014-4109-8F40-33E42F7A3E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA2A9F5-4014-4109-8F40-33E42F7A3E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA2A9F5-4014-4109-8F40-33E42F7A3E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA2A9F5-4014-4109-8F40-33E42F7A3E94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -465,6 +471,7 @@ Global
 		{16EDD2C3-56AD-4A2E-A49E-046748AF8995} = {07F686F1-1631-4225-A64F-A19C9204935B}
 		{8193AE3A-00CC-4D8C-843D-07F61C86DE15} = {07F686F1-1631-4225-A64F-A19C9204935B}
 		{4BFA0D47-8C25-4803-98B9-BE88AFB86B00} = {07F686F1-1631-4225-A64F-A19C9204935B}
+		{CAA2A9F5-4014-4109-8F40-33E42F7A3E94} = {320E2DBB-3EBD-41FC-A7E7-C6AE7963B235}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AAC40176-6F7D-4966-A075-192AFF779733}
